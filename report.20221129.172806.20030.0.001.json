@@ -1,0 +1,307 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20221129.172806.20030.0.001.json",
+    "dumpEventTime": "2022-11-29T17:28:06Z",
+    "dumpEventTimeStamp": "1669723086896",
+    "processId": 20030,
+    "cwd": "/var/www/html/nesh",
+    "commandLine": [
+      "node",
+      "/home/chirag/.nvm/versions/node/v12.1.0/bin/gulp"
+    ],
+    "nodejsVersion": "v12.1.0",
+    "glibcVersionRuntime": "2.31",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.1.0",
+      "v8": "7.4.288.21-node.16",
+      "uv": "1.28.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.38.0",
+      "napi": "4",
+      "llhttp": "1.1.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.1.0/node-v12.1.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.1.0/node-v12.1.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.4.0-132-generic",
+    "osVersion": "#148-Ubuntu SMP Mon Oct 17 16:02:06 UTC 2022",
+    "osMachine": "x86_64",
+    "host": "suchi"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000aa766d",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [gulp]"
+    },
+    {
+      "pc": "0x000000000098c903",
+      "symbol": "node::OnFatalError(char const*, char const*) [gulp]"
+    },
+    {
+      "pc": "0x0000000000b050de",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [gulp]"
+    },
+    {
+      "pc": "0x0000000000b05459",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [gulp]"
+    },
+    {
+      "pc": "0x0000000000f10515",
+      "symbol": " [gulp]"
+    },
+    {
+      "pc": "0x0000000000f1ae7b",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [gulp]"
+    },
+    {
+      "pc": "0x0000000000f1bb97",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [gulp]"
+    },
+    {
+      "pc": "0x0000000000f1e635",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [gulp]"
+    },
+    {
+      "pc": "0x0000000000ee9660",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace) [gulp]"
+    },
+    {
+      "pc": "0x00000000011bb46e",
+      "symbol": "v8::internal::Runtime_AllocateInNewSpace(int, unsigned long*, v8::internal::Isolate*) [gulp]"
+    },
+    {
+      "pc": "0x0000000001a80fe2",
+      "symbol": " [gulp]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2163380224,
+    "totalCommittedMemory": 2160107176,
+    "usedMemory": 2029128824,
+    "availableMemory": 68505208,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 32024,
+        "capacity": 523976,
+        "used": 31712,
+        "available": 492264
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 32473912,
+        "capacity": 16767232,
+        "used": 2022944,
+        "available": 14744288
+      },
+      "old_space": {
+        "memorySize": 1996611584,
+        "committedMemory": 1995588712,
+        "capacity": 1899194528,
+        "used": 1897128176,
+        "available": 2066352
+      },
+      "code_space": {
+        "memorySize": 2260992,
+        "committedMemory": 1994016,
+        "capacity": 1657248,
+        "used": 1657248,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 3674112,
+        "committedMemory": 3263696,
+        "capacity": 1608960,
+        "used": 1608960,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 126705664,
+        "committedMemory": 126705664,
+        "capacity": 126676328,
+        "used": 126676328,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3456,
+        "used": 3456,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16767232,
+        "used": 0,
+        "available": 16767232
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 261.671,
+    "kernelCpuSeconds": 27.2238,
+    "cpuConsumptionPercent": 1.26205,
+    "maxRss": 3975012352,
+    "pageFaults": {
+      "IORequired": 485,
+      "IONotRequired": 2535052
+    },
+    "fsActivity": {
+      "reads": 167064,
+      "writes": 35128
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 134.548,
+    "kernelCpuSeconds": 12.8964,
+    "cpuConsumptionPercent": 0.644116,
+    "fsActivity": {
+      "reads": 148136,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "SHELL": "/bin/bash",
+    "SESSION_MANAGER": "local/suchi:@/tmp/.ICE-unix/2119,unix/suchi:/tmp/.ICE-unix/2119",
+    "QT_ACCESSIBILITY": "1",
+    "COLORTERM": "truecolor",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-ubuntu:/etc/xdg",
+    "NVM_INC": "/home/chirag/.nvm/versions/node/v12.1.0/include/node",
+    "XDG_MENU_PREFIX": "gnome-",
+    "TERM_PROGRAM_VERSION": "1.52.1",
+    "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+    "LANGUAGE": "en_IN:en",
+    "MANDATORY_PATH": "/usr/share/gconf/ubuntu.mandatory.path",
+    "GNOME_SHELL_SESSION_MODE": "ubuntu",
+    "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+    "XMODIFIERS": "@im=ibus",
+    "DESKTOP_SESSION": "ubuntu",
+    "SSH_AGENT_PID": "2081",
+    "GTK_MODULES": "gail:atk-bridge",
+    "PWD": "/var/www/html/nesh",
+    "XDG_SESSION_DESKTOP": "ubuntu",
+    "LOGNAME": "chirag",
+    "XDG_SESSION_TYPE": "x11",
+    "GPG_AGENT_INFO": "/run/user/1000/gnupg/S.gpg-agent:0:1",
+    "XAUTHORITY": "/run/user/1000/gdm/Xauthority",
+    "VSCODE_GIT_ASKPASS_NODE": "/usr/share/code/code",
+    "GJS_DEBUG_TOPICS": "JS ERROR;JS LOG",
+    "WINDOWPATH": "2",
+    "HOME": "/home/chirag",
+    "USERNAME": "chirag",
+    "IM_CONFIG_PHASE": "1",
+    "LANG": "en_GB.UTF-8",
+    "XDG_CURRENT_DESKTOP": "Unity",
+    "GIT_ASKPASS": "/usr/share/code/resources/app/extensions/git/dist/askpass.sh",
+    "INVOCATION_ID": "b9e3623b2558488f9bcec48227efec7e",
+    "MANAGERPID": "1720",
+    "CHROME_DESKTOP": "code-url-handler.desktop",
+    "GJS_DEBUG_OUTPUT": "stderr",
+    "NVM_DIR": "/home/chirag/.nvm",
+    "XDG_SESSION_CLASS": "user",
+    "TERM": "xterm-256color",
+    "DEFAULTS_PATH": "/usr/share/gconf/ubuntu.default.path",
+    "USER": "chirag",
+    "VSCODE_GIT_IPC_HANDLE": "/run/user/1000/vscode-git-ef402c4bfe.sock",
+    "DISPLAY": ":0",
+    "SHLVL": "1",
+    "QT_IM_MODULE": "ibus",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "VSCODE_GIT_ASKPASS_MAIN": "/usr/share/code/resources/app/extensions/git/dist/askpass-main.js",
+    "JOURNAL_STREAM": "9:49233",
+    "XDG_DATA_DIRS": "/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop",
+    "PATH": "/home/chirag/.nvm/versions/node/v12.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+    "GDMSESSION": "ubuntu",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "ubuntu:GNOME",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "NVM_BIN": "/home/chirag/.nvm/versions/node/v12.1.0/bin",
+    "GIO_LAUNCHED_DESKTOP_FILE_PID": "8236",
+    "GIO_LAUNCHED_DESKTOP_FILE": "/usr/share/applications/code.desktop",
+    "TERM_PROGRAM": "vscode",
+    "_": "/home/chirag/.nvm/versions/node/v12.1.0/bin/gulp",
+    "INIT_CWD": "/var/www/html/nesh"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 67108864,
+      "hard": 67108864
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 63342,
+      "hard": 63342
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/lib/x86_64-linux-gnu/librt.so.1",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2",
+    "/lib/x86_64-linux-gnu/libnss_files.so.2"
+  ]
+}
