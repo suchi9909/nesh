@@ -1,0 +1,45 @@
+/*=====================
+    Testimonial Scss start
+==========================*/
+.testimonial-style-1 {
+    .slider-5 {
+        margin: -20px 0;
+    }
+    .marketing-title {
+        position: relative;
+        p {
+            width: 36%;
+        }
+        .arrow-effect {
+            position: absolute;
+            left: 20%;
+            top: -40px;
+        }
+    }
+    .testimonial-box {
+        box-shadow: 0px 24px 30px rgba(var(--theme-color2), 0.07);
+        background-color: rgba(var(--white), 1);
+        padding: 30px 20px;
+        position: relative;
+        margin: 20px 0;
+        .quote-img {
+            position: absolute;
+            right: 30px;
+            bottom: 18%;
+        }
+        p {
+            font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
+            margin-bottom: 30px;
+            font-weight: 500;
+            color: rgba(var(--content-color), 1);
+        }
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            h5 {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

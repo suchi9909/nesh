@@ -1,0 +1,64 @@
+/*=====================
+    Features Scss start
+==========================*/
+.marketing-feature {
+    padding: 40px;
+    background: linear-gradient(270deg, rgba(var(--theme-color2), 1) 23.43%, rgba(var(--theme-color2), 0.95) 50%);
+    border-radius: 20px;
+    .marketing-title {
+        p {
+            width: 76%;
+        }
+        h5 {
+            &:after {
+                background-color: rgba(var(--white), 0.1);
+            }
+        }
+    }
+    .feature-counter {
+        margin-top: 45px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        h2 {
+            font-size: 50px;
+        }
+        h4 {
+            color: rgba(var(--white), 1);
+        }
+        li {
+            &:first-child {
+                h2 {
+                    color: #a9deb4;
+                }
+            }
+            &:nth-child(2) {
+                h2 {
+                    color: #ffd100;
+                }
+            }
+        }
+    }
+    .feature-box {
+        h3,
+        p {
+            color: rgba(--white, 1);
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(var(--white), 0.1);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            &:after {
+                content: "";
+                position: absolute;
+                background-image: url(../svg/shapes/lines.svg);
+                background-size: contain;
+            }
+        }
+    }
+}

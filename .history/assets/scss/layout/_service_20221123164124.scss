@@ -1,0 +1,132 @@
+/*=====================
+    Service Scss start
+==========================*/
+.marketing-service {
+    position: relative;
+    overflow: hidden;
+    .animated-shapes {
+        .spiral-shape {
+            position: absolute;
+            right: -2.5%;
+            top: 0;
+            @media (max-width: 1199px) {
+                right: -10.5%;
+            }
+        }
+        .arrow-shape {
+            position: absolute;
+            left: -8%;
+            top: 12%;
+        }
+    }
+    .row {
+        > div {
+            &:nth-child(2) {
+                .service-box {
+                    .service-icon {
+                        &:after {
+                            background: linear-gradient(180deg, #fff6dd 0%, #fbeef8 100%);
+                        }
+                    }
+                }
+            }
+            &:nth-child(3) {
+                .service-box {
+                    .service-icon {
+                        &:after {
+                            background: linear-gradient(180deg, #f6f4ff 0%, #e2f3ff 100%);
+                        }
+                    }
+                }
+            }
+            &:nth-child(4) {
+                .service-box {
+                    .service-icon {
+                        &:after {
+                            background: linear-gradient(180deg, #f5f3ff 0%, #ffe9e9 100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .service-box {
+        position: relative;
+        text-align: center;
+        filter: drop-shadow(0 24px 30px rgba(var(--theme-color2), 0.07));
+        &:after {
+            border: 2px solid rgba(var(--black), 1);
+            content: "";
+            height: 90%;
+            left: 10px;
+            position: absolute;
+            top: 20px;
+            transform: rotate(0deg);
+            width: 90%;
+            z-index: -1;
+            transition: all 0.5s ease;
+        }
+        > div {
+            clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+            padding: 35px 20px;
+            background: rgba(var(--white));
+        }
+        .service-icon {
+            position: relative;
+            width: auto;
+            display: inline-block;
+            z-index: 1;
+            padding-left: 50px;
+            margin-bottom: calc(45px + (55 - 45) * ((100vw - 320px) / (1920 - 320)));
+            &::after {
+                content: "";
+                background: linear-gradient(180deg, #e6fffe 0%, #e9ebff 100%);
+                height: 96px;
+                left: 6px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 75px;
+                z-index: -1;
+                clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+            }
+        }
+        .service-content {
+            h3 {
+                font-weight: 600;
+            }
+            p {
+                font-weight: 500;
+                margin-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+            .view-btn {
+                font-size: 16px;
+                color: rgba(var(--title-color), 1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.5s ease;
+                font-weight: 500;
+            }
+        }
+        &:hover {
+            &:after {
+                left: -20px;
+                top: 40px;
+                transform: rotate(-1deg);
+                transition: all 0.5s ease;
+            }
+            .service-content {
+                .view-btn {
+                    color: rgba(var(--theme-color2), 1);
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+    }
+}

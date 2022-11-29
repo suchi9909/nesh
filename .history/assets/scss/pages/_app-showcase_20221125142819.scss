@@ -1,0 +1,28 @@
+/*=====================
+    App showcase Scss start
+==========================*/
+.app-about-section {
+    .about-img {
+        position: relative;
+        .about-img1 {
+            position: absolute;
+            left: 30px;
+            top: 33%;
+        }
+        .about-img2 {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .label-box {
+            position: absolute;
+            padding: 24px;
+            background-color: rgba(var(--white), 1);
+            box-shadow: 0px 20.783px 31.1745px rgba(31, 49, 97, 0.1);
+            h3 {
+                font-size: 28px;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+/*=====================
+    pricing Scss start
+==========================*/
+.pricing-box {
+    box-shadow: 0px 24px 30px rgba(var(--theme-color2), 0.07);
+    > div {
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+        padding: 30px 44px;
+        background-color: rgba(var(--white), 1);
+    }
+}

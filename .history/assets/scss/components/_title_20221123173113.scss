@@ -1,0 +1,82 @@
+/*=====================
+    Title Scss start
+==========================*/
+.marketing-title {
+    margin-bottom: 50px;
+    @media (max-width: 1400px) {
+        margin-bottom: 20px;
+    }
+    h2 {
+        width: 90%;
+        text-transform: capitalize;
+        @media (max-width: 1199px) {
+            width: 100%;
+        }
+    }
+    h5 {
+        color: rgba(var(--theme-color3), 1);
+        display: inline-block;
+        position: relative;
+        padding-left: 10px;
+        &:after {
+            content: "";
+            height: 25px;
+            left: 0;
+            position: absolute;
+            top: -3px;
+            width: 44%;
+            background-color: rgba(var(--theme-color3), 0.1);
+            @media (max-width: 991px) {
+                width: 62%;
+            }
+        }
+    }
+    p {
+        font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 500;
+        margin-top: 12px;
+        width: 88%;
+        margin-bottom: 0;
+        @media (max-width: 1199px) {
+            width: 100%;
+        }
+    }
+    &.text-center {
+        h2 {
+            width: 100%;
+        }
+        p {
+            margin: 12px auto 0;
+            width: 46%;
+            @media (max-width: 1400px) {
+                width: 56%;
+            }
+            @media (max-width: 1199px) {
+                width: 66%;
+            }
+            @media (max-width: 1199px) {
+                width: 100%;
+            }
+        }
+    }
+    &.text-light {
+        h2 {
+            color: rgba(var(--white), 1);
+        }
+        p {
+            color: rgba(var(--white), 0.95);
+        }
+    }
+    &.center-a-xl {
+        @media (max-width: 1199px) {
+            text-align: center;
+            h2 {
+                margin: 0 auto;
+            }
+            p {
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+/*=====================
+    App showcase Scss start
+==========================*/
+.app-about-section {
+    .about-img1 {
+        position: absolute;
+        left: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .about-img2 {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

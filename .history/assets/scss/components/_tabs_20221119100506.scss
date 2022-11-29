@@ -1,0 +1,11 @@
+/*=====================
+    Tabs Scss start
+==========================*/
+.tab-style-1 {
+    &.nav-tabs {
+        border: none;
+        .nav-link {
+            border: none;
+        }
+    }
+}

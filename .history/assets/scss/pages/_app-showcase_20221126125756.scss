@@ -1,0 +1,116 @@
+/*=====================
+    App showcase Scss start
+==========================*/
+.app-label-box {
+    position: absolute;
+    padding: 18px;
+    background-color: rgba(var(--white), 1);
+    box-shadow: 0px 20.783px 31.1745px rgba(var(--black), 0.1);
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    bottom: -20px;
+    left: 47%;
+    animation: up-down 5s ease-out infinite;
+    z-index: 1;
+    h3 {
+        font-size: 28px;
+        margin: 5px 0;
+        font-weight: 700;
+    }
+    h6 {
+        margin-bottom: 0;
+    }
+}
+
+.app-about-section {
+    .about-img {
+        position: relative;
+        .about-img1 {
+            position: absolute;
+            left: 30px;
+            top: 33%;
+        }
+        .about-img2 {
+            position: absolute;
+            right: 30px;
+            top: 2%;
+        }
+    }
+    .app-title {
+        margin-bottom: 30px;
+    }
+    .about-listing {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 70%;
+        margin-bottom: 30px;
+        li {
+            width: 48%;
+            font-size: 18px;
+            font-weight: 700;
+            padding-left: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
+
+// why choose us
+.app-whychoose {
+    .app-title {
+        h2 {
+            color: rgba(var(--white), 1);
+            text-transform: capitalize;
+        }
+    }
+    .whychoose-img {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        z-index: 1;
+        .rectangle-shape {
+            position: absolute;
+            left: 40px;
+            z-index: -1;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .app-label-box {
+        left: 3%;
+    }
+}
+
+// tab content
+.app-tab-content {
+    h2 {
+        font-family: $space-grotesk;
+        color: rgba(var(--title-color), 1);
+        margin-bottom: 12px;
+    }
+    p {
+        font-size: 18px;
+        color: rgba(var(--content-color), 1);
+        font-weight: 500;
+    }
+    .store-btn {
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            li {
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    background-color: rgba(#52526c, 0.5);
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}

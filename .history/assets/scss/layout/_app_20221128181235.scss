@@ -1,0 +1,32 @@
+/*=====================
+    App Scss start
+==========================*/
+.app-section {
+    .section-space {
+        padding: 100px 60px;
+    }
+    .app-buttons {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 30px;
+    }
+    .app-images {
+        .phone {
+            position: absolute;
+            right: 16%;
+            bottom: 0;
+        }
+        .blob-img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+            -webkit-animation: transform 30s ease-in-out infinite both alternate,
+                movement_two 60s ease-in-out infinite both;
+            animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
+        }
+    }
+}

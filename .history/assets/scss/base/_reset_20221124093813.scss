@@ -1,0 +1,54 @@
+/*=====================
+    Reset CSS start
+==========================*/
+@media (min-width: 1424px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+section,
+.section-t-space {
+    padding-top: calc(30px + (70 - 30) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.section-b-space {
+    padding-bottom: calc(30px + (70 - 30) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.section-md-space {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-sm-space {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.w-70 {
+    width: 70% !important;
+    @media (max-width: 767px) {
+        width: 100% !important;
+    }
+}
+
+.text-content {
+    color: rgba(var(--content-color), 1) !important;
+}
+
+.text-title {
+    color: rgba(var(--title-color), 1) !important;
+}
+
+.text-theme-color1 {
+    color: rgba(var(--theme-color1), 1) !important;
+}
+
+.text-theme-color2 {
+    color: rgba(var(--theme-color2), 1) !important;
+}
+
+.text-theme-color3 {
+    color: rgba(var(--theme-color3), 1) !important;
+}

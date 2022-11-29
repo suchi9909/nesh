@@ -1,0 +1,11 @@
+/*=====================
+    Slider Scss start
+==========================*/
+
+.swiper-button-next {
+    &:after {
+        content: "\EA6C";
+        font-family: remixicon !important;
+        font-style: normal;
+    }
+}

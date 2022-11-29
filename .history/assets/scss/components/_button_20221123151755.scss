@@ -1,0 +1,91 @@
+/*=====================
+    Button Scss start
+==========================*/
+
+.btn {
+    padding: 11px 26px;
+    font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 23px;
+    border-radius: 5px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    &.btn-lg {
+        padding: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)))
+            calc(16px + (30 - 16) * ((100vw - 320px) / (1920 - 320)));
+    }
+}
+
+.btn-color1 {
+    box-shadow: 0px 8px 20px 0px rgba(var(--theme-color1), 0.1);
+    background: linear-gradient(
+        to right,
+        rgba(var(--theme-color1), 0.65) 0%,
+        rgba(var(--theme-color1), 1) 51%,
+        rgba(var(--theme-color1), 0.65) 100%
+    );
+    color: rgba(var(--white), 1);
+    background-size: 300% 100%;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+        background-position: 100% 0;
+        transition: all 0.4s ease-in-out;
+        box-shadow: 0px 8px 20px 0px rgba(var(--theme-color1), 0.2);
+        color: rgba(var(--white), 1);
+        transform: translateY(-4px);
+    }
+}
+
+.btn-color2 {
+    box-shadow: 0px 8px 20px 0px rgba(var(--theme-color2), 0.1);
+    background: radial-gradient(
+        59.91% 858.55% at 27.36% 100%,
+        rgba(var(--theme-color2), 1) 0%,
+        rgba(var(--theme-color2), 0.65) 100%
+    );
+    color: rgba(var(--white), 1);
+    background-size: 300% 100%;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+        background-position: 100% 0;
+        transition: all 0.4s ease-in-out;
+        box-shadow: 0px 8px 20px 0px rgba(var(--theme-color2), 0.2);
+        color: rgba(var(--white), 1);
+        transform: translateY(-4px);
+    }
+}
+
+.play-btn {
+    color: rgba(var(--title-color));
+    font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+    span {
+        margin-right: 14px;
+        width: calc(44px + (55 - 44) * ((100vw - 320px) / (1920 - 320)));
+        height: calc(44px + (55 - 44) * ((100vw - 320px) / (1920 - 320)));
+        border-radius: 100%;
+        box-shadow: 0px 15px 20px rgba(var(--black), 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        background-color: rgba(var(--white), 1);
+        i {
+            color: rgba(var(--theme-color1), 1);
+            font-size: 28px;
+        }
+    }
+    &:hover {
+        color: rgba(var(--theme-color2), 1);
+        transition: all 0.5s ease;
+        span {
+            box-shadow: 0px 7px 20px rgba(var(--black), 0.14);
+            transition: all 0.5s ease;
+            transform: translateY(-5px);
+        }
+    }
+}

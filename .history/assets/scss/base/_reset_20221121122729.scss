@@ -1,0 +1,41 @@
+/*=====================
+    Reset CSS start
+==========================*/
+@media (min-width: 1424px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+section,
+.section-t-space {
+    padding-top: 70px;
+}
+
+.section-b-space {
+    padding-bottom: 70px;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.text-content {
+    color: rgba(var(--content-color), 1) !important;
+}
+
+.text-title {
+    color: rgba(var(--title-color), 1) !important;
+}
+
+.text-theme-color1 {
+    color: rgba(var(--theme-color1), 1) !important;
+}
+
+.text-theme-color2 {
+    color: rgba(var(--theme-color2), 1) !important;
+}
+
+.text-theme-color3 {
+    color: rgba(var(--theme-color3), 1) !important;
+}

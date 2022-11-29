@@ -1,0 +1,164 @@
+/*=====================
+    pricing Scss start
+==========================*/
+.marketing-pricing-sec {
+    position: relative;
+    overflow: hidden;
+    .container {
+        padding: 0 50px;
+        @media (max-width: 1367px) {
+            padding: 0 15px;
+        }
+    }
+    .row {
+        margin: -30px;
+        @media (max-width: 767px) {
+            margin: -10px;
+        }
+        .pricing-box {
+            margin: 30px;
+            @media (max-width: 767px) {
+                margin: 10px;
+            }
+        }
+    }
+    .swiper-slide-next {
+        .pricing-box {
+            position: relative;
+            &:after {
+                border: 2px solid rgba(var(--black), 1);
+                content: "";
+                height: 90%;
+                position: absolute;
+                width: 90%;
+                z-index: -1;
+                left: -20px;
+                top: 61px;
+                transition: all 0.5s ease;
+                transform: rotate(1deg);
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+            .price-btn {
+                background-color: rgba(var(--theme-color2), 1);
+                color: rgba(var(--white), 1);
+            }
+        }
+    }
+    .animated-shapes {
+        .shape1 {
+            position: absolute;
+            left: -4%;
+            top: 0;
+        }
+        .shape2 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .shape3 {
+            position: absolute;
+            bottom: 0;
+            left: 15%;
+            animation: mymove 5s infinite;
+        }
+    }
+    .pricing-box {
+        filter: drop-shadow(0px 24px 30px rgba(var(--theme-color2), 0.07));
+        > div {
+            clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+            padding: calc(20px + (25 - 20) * ((100vw - 320px) / (1920 - 320)))
+                calc(20px + (25 - 20) * ((100vw - 320px) / (1920 - 320)))
+                calc(30px + (40 - 30) * ((100vw - 320px) / (1920 - 320)));
+            background-color: rgba(var(--white), 1);
+        }
+        .price-title {
+            padding: 0 calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+            h2 {
+                font-size: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
+                font-weight: 700;
+            }
+            h4 {
+                font-weight: 500;
+                margin-bottom: 16px;
+            }
+        }
+        .btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            border-radius: 0;
+            margin-bottom: 18px;
+            &.btn-light {
+                color: rgba(var(--theme-color2), 1);
+                background: rgba(var(--theme-color2), 0.1);
+                border: none;
+                &:hover {
+                    background: rgba(var(--theme-color2), 1);
+                    color: rgba(var(--white), 1);
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+        .subs-detail {
+            padding: 0 calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+            h2 {
+                color: rgba(var(--theme-color3), 1);
+                font-size: calc(30px + (40 - 30) * ((100vw - 320px) / (1920 - 320)));
+                margin-bottom: 16px;
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+        .pricing-details {
+            margin-top: 24px;
+            padding: 0 calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+            li {
+                color: rgba(var(--content-color), 1);
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                + li {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+// application pricing
+.app-pricing-sec {
+    .toggle-button-sec {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        h4 {
+            margin-bottom: 0;
+            color: rgba(var(--title-color), 1);
+        }
+        .save-text {
+            h2 {
+                font-weight: 300;
+                color: rgba(var(--theme-color3), 1);
+                font-family: $space-grotesk;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            img {
+                position: absolute;
+                top: -30px;
+                left: 55%;
+            }
+        }
+    }
+    .pricing-box {
+        background-color: rgba(#f4f4f6, 0.5);
+    }
+}

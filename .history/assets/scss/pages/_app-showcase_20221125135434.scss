@@ -1,0 +1,9 @@
+/*=====================
+    App showcase Scss start
+==========================*/
+.app-about-section {
+    .about-img {
+        position: relative;
+        clip-path: polygon(0 7%, 100% 29%, 100% 83%, 0% 100%);
+    }
+}

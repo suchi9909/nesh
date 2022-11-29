@@ -1,0 +1,62 @@
+/*=====================
+    Accordion Scss start
+==========================*/
+.accordion-button {
+    &:focus {
+        box-shadow: none;
+    }
+}
+.accordion-style-1 {
+    .accordion-item {
+        border: none;
+        padding-left: 35px;
+        + .accordion-item {
+            margin-top: 26px;
+        }
+    }
+    .accordion-button {
+        padding: 0;
+        color: rgba(var(--title-color), 1);
+        font-size: calc(17px + (20 - 17) * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 500;
+        &:after {
+            content: "\EA13";
+            font-family: remixicon !important;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            transform: none;
+            background-image: none;
+            width: 22px;
+            height: 22px;
+            background-color: rgba(var(--theme-color3), 1);
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(var(--white), 1);
+            position: absolute;
+            left: -35px;
+            top: 2px;
+        }
+        &:not(.collapsed) {
+            background-color: transparent;
+            box-shadow: none;
+            &:after {
+                content: "\F1AE";
+            }
+        }
+    }
+    .accordion-body {
+        padding: 10px 0 0;
+        color: rgba(var(--content-color), 1);
+    }
+}
+
+.accordion-style-2 {
+    .accordion-item {
+        background-color: transparent;
+    }
+    .accordion-button {
+        background-color: transparent;
+    }
+}

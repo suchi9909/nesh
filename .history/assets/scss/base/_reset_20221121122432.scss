@@ -1,0 +1,29 @@
+/*=====================
+    Reset CSS start
+==========================*/
+@media (min-width: 1424px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+section,
+.section-t-space {
+    padding-top: 70px;
+}
+
+.section-b-space {
+    padding-bottom: 70px;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.text-content {
+    color: rgba(var(--content-color), 1);
+}
+
+.text-title {
+    color: rgba(var(--title-color), 1);
+}

@@ -1,0 +1,80 @@
+/*=====================
+    Process Scss start
+==========================*/
+.process-box {
+    --roundsize: 80px;
+    .icon-part {
+        margin-bottom: 40px;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            width: calc(100% - var(--roundsize));
+            height: 1px;
+            border-bottom: 1px dashed #64af5b;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+        &:before {
+            position: absolute;
+            content: "\EA6E";
+            font-family: remixicon !important;
+            font-style: normal;
+            font-size: 20px;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #64af5b;
+        }
+        .icon {
+            width: var(--roundsize);
+            height: var(--roundsize);
+            border-radius: 100%;
+            background: linear-gradient(44.99deg, #ebeaea 14.61%, #ffffff 85.32%);
+            margin-left: 18px;
+            box-shadow: -20px 20px 20px 0px rgba(var(--black), 0.07);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            &:after {
+                content: "";
+                width: calc(var(--roundsize) - 6px);
+                height: calc(var(--roundsize) - 6px);
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #f9f9f9;
+                border-radius: 100%;
+                z-index: -1;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                background-image: url("../svg/app/round-pattern.svg");
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    .process-content {
+        h3 {
+            color: rgba(var(--title-color), 1);
+            font-weight: 500;
+            font-family: $space-grotesk;
+        }
+        p {
+            font-size: 18px;
+            color: rgba(var(--content-color), 1);
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+    }
+}

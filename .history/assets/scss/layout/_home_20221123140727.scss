@@ -1,0 +1,106 @@
+/**=====================
+     home section scss
+==========================**/
+
+// marketing home
+.marketing-home {
+    position: relative;
+    .animated-shapes {
+        .green-round {
+            position: absolute;
+            left: 36%;
+            top: 24%;
+        }
+        .yellow-round {
+            position: absolute;
+            left: 7%;
+            top: 45%;
+        }
+        .dot-shape {
+            position: absolute;
+            left: 41%;
+            bottom: 10%;
+        }
+    }
+    .home-content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 220px 0 140px;
+        height: 100vh;
+        h4 {
+            color: rgba(var(--theme-color1), 1);
+            position: relative;
+            margin-bottom: 0;
+            padding: 13px 15px 13px 25px;
+            display: flex;
+            align-items: center;
+            &:after {
+                content: "";
+                left: 0;
+                position: absolute;
+                width: 30%;
+                height: 100%;
+                border-radius: 25px;
+                background: linear-gradient(90deg, rgba(var(--theme-color1), 0.16) 0%, rgba(217, 217, 217, 0) 100%);
+            }
+        }
+        h1 {
+            color: rgba(var(--title-color));
+            position: relative;
+            margin-top: 15px;
+            margin-bottom: 50px;
+            &::after {
+                content: "";
+                background-image: url("../svg/shapes/title-shape.svg");
+                position: absolute;
+                width: 200px;
+                height: 30px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                bottom: -25px;
+                left: 30px;
+            }
+        }
+        p {
+            font-size: calc(14px + (17 - 14) * ((100vw - 320px) / (1920 - 320)));
+            font-weight: 500;
+            margin-bottom: 0;
+            width: 90%;
+        }
+        .ctas-btn {
+            display: flex;
+            align-items: center;
+            margin-top: 24px;
+            .btn {
+                padding: 16px 26px;
+            }
+            .play-btn {
+                margin-left: 28px;
+            }
+        }
+    }
+    .home-charcter {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        position: relative;
+        .thumbs-up {
+            position: absolute;
+            top: 26%;
+            right: 31%;
+            animation: up-down 5s ease-out infinite;
+        }
+        .bulb {
+            left: 16%;
+            position: absolute;
+            top: 14%;
+        }
+        .smily {
+            position: absolute;
+            right: 14%;
+            bottom: 42%;
+            animation: zoom-in-zoom-out 2s ease-out infinite;
+        }
+    }
+}

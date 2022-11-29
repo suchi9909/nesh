@@ -1,0 +1,77 @@
+/*=====================
+    form Scss start
+==========================*/
+.form-style-1 {
+    .form-control {
+        border-radius: 5px;
+        border: none;
+        background-color: rgba(var(--white), 0.15);
+        font-size: 16px;
+        color: rgba(var(--white), 1);
+        font-weight: 500;
+        padding: 13px;
+        position: relative;
+        &::placeholder {
+            color: rgba(var(--white), 0.7);
+        }
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .form-group {
+        position: relative;
+        .action-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 14px;
+            color: #f99313;
+            font-weight: 500;
+        }
+    }
+}
+
+.form-style-2 {
+    .form-group {
+        position: relative;
+        i {
+            position: absolute;
+            right: 0;
+            color: rgba(var(--title-color), 1);
+            top: 15px;
+        }
+    }
+    .form-control {
+        border-radius: 5px;
+        border: none;
+        border-bottom: 1px solid rgba(var(--title-color), 0.5);
+        background-color: transparent;
+        font-size: 18px;
+        color: rgba(var(--title-color), 1);
+        font-weight: 500;
+        padding: 13px 0;
+        position: relative;
+        border-radius: 0;
+        &::placeholder {
+            text-transform: capitalize;
+            color: rgba(var(--title-color), 0.7);
+        }
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    &.light-version {
+        .form-group {
+            i {
+                color: rgba(var(--white), 1);
+            }
+        }
+        .form-control {
+            border-bottom: 1px solid rgba(var(--white), 0.5);
+            color: rgba(var(--white), 1);
+            &::placeholder {
+                color: rgba(var(--white), 0.7);
+            }
+        }
+    }
+}

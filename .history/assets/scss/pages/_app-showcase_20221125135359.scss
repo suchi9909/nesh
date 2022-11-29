@@ -1,0 +1,12 @@
+/*=====================
+    App showcase Scss start
+==========================*/
+.app-about-section {
+    .about-img {
+        position: relative;
+        background-image: url(../images/app-showcase/about-men.jpg);
+        clip-path: polygon(0 7%, 100% 29%, 100% 83%, 0% 100%);
+        // img {
+        // }
+    }
+}

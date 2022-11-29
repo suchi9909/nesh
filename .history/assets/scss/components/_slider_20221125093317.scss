@@ -1,0 +1,29 @@
+/*=====================
+    Slider Scss start
+==========================*/
+
+.swiper-arrow-round {
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 48px;
+        height: 48px;
+        border: 1px solid #bdbbd4;
+        border-radius: 100%;
+        &:after {
+            font-family: remixicon !important;
+            font-style: normal;
+            font-size: 28px;
+            color: rgba(var(--title-color), 1);
+        }
+    }
+    .swiper-button-next {
+        &:after {
+            content: "\EA6C";
+        }
+    }
+    .swiper-button-prev {
+        &:after {
+            content: "\EA60";
+        }
+    }
+}

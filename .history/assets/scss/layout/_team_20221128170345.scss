@@ -1,0 +1,26 @@
+/*=====================
+    Team Scss start
+==========================*/
+
+.app-team-sec {
+    .team-box {
+        padding: 15px;
+        text-align: center;
+        box-shadow: 13px 16px 30px rgba(4, 79, 79, 0.04);
+        .team-img {
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        h3 {
+            color: rgba(var(--title-color), 1);
+            font-weight: 700;
+            margin-bottom: 4px;
+            margin-top: 10px;
+        }
+        h5 {
+            color: rgba(var(--theme-color3), 1);
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+    }
+}

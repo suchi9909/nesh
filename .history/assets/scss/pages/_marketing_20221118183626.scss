@@ -1,0 +1,49 @@
+/*=====================
+    Marketing Scss start
+==========================*/
+// about section
+.about-img {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    box-shadow: none;
+    position: relative;
+}
+
+.sale-growth-sec {
+    position: relative;
+    z-index: 1;
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 77%;
+        transform: translateY(-50%);
+        background-color: #f6f7ff;
+        top: 50%;
+        z-index: -2;
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+    }
+    .animated-shapes {
+        .letter {
+            position: absolute;
+            right: 0%;
+            top: 37%;
+        }
+        .dots-shape {
+            position: absolute;
+            left: 64%;
+            top: -5px;
+            z-index: -1;
+        }
+        .plus-shape {
+            position: absolute;
+            left: 0;
+        }
+    }
+    .sales-growth-content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}

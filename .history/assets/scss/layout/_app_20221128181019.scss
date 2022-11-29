@@ -1,0 +1,21 @@
+/*=====================
+    App Scss start
+==========================*/
+.app-section {
+    .section-space {
+        padding: 100px 60px;
+    }
+    .app-buttons {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 30px;
+    }
+    .app-images {
+        .phone {
+            position: absolute;
+            right: 16%;
+            bottom: 0;
+        }
+    }
+}

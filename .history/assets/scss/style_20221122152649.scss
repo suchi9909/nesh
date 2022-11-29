@@ -1,0 +1,32 @@
+// utils scss files
+@import "utils/variables";
+
+// base scss files
+@import "base/reset";
+@import "base/typography";
+
+// components scss files
+@import "components/button";
+@import "components/accordion";
+@import "components/animation";
+@import "components/progressbar";
+@import "components/title";
+@import "components/tabs";
+
+// layout scss files
+@import "layout/nav";
+@import "layout/header";
+@import "layout/home";
+@import "layout/logo";
+@import "layout/service";
+@import "layout/features";
+@import "layout/pricing";
+@import "layout/testimonial";
+@import "layout/team";
+@import "layout/blog";
+@import "layout/footer";
+
+// pages
+@import "pages/marketing";
+
+// themes scss files

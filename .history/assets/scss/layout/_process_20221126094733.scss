@@ -1,0 +1,33 @@
+/*=====================
+    Process Scss start
+==========================*/
+.process-box {
+    .icon-part {
+        .icon {
+            --roundsize: 80px;
+            width: var(--roundsize);
+            height: var(--roundsize);
+            border-radius: 100%;
+            background: linear-gradient(44.99deg, #ebeaea 14.61%, #ffffff 85.32%);
+            margin-left: 55px;
+            box-shadow: -20px 20px 20px 0px #dddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            &:after {
+                content: "";
+                width: calc(var(--roundsize) - 6px);
+                height: calc(var(--roundsize) - 6px);
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #f9f9f9;
+                border-radius: 100%;
+                z-index: -1;
+            }
+        }
+    }
+}

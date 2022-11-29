@@ -1,0 +1,64 @@
+/*=====================
+    Typography CSS start
+==========================*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: $dm-sans;
+}
+h1 {
+  font-weight: bold;
+  font-size: calc(22px + (68 - 22) * ((100vw - 320px) / (1920 - 320)));
+  line-height: 1.5;
+}
+h2 {
+  font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 600;
+}
+h3 {
+  font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
+}
+
+h4 {
+  font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+}
+
+h5 {
+  font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
+  color: rgba(var(--content-color), 1);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  [dir="rtl"] & {
+    padding-inline-start: 0;
+    margin-inline-start: 0;
+  }
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}

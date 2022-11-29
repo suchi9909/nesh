@@ -1,0 +1,28 @@
+/*=====================
+    Team Scss start
+==========================*/
+.join-team-section {
+    background-image: url(../images/marketing/team-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 50px 50px 0 50px;
+    position: relative;
+    .join-effect {
+        .join-effect1 {
+            position: absolute;
+            left: -60px;
+            bottom: -40px;
+        }
+        .join-effect2 {
+            position: absolute;
+            right: -60px;
+            top: -40px;
+        }
+    }
+    .team-joining-sec {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -70px;
+        position: relative;
+    }
+}

@@ -1,0 +1,18 @@
+/*=====================
+    Marketing Scss start
+==========================*/
+// about section
+.about-img {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    box-shadow: none;
+    position: relative;
+    .animated-shapes {
+        .letter {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+    }
+}

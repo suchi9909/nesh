@@ -1,0 +1,27 @@
+/*=====================
+    Team Scss start
+==========================*/
+.join-team-section {
+    background: linear-gradient(90deg, rgba(var(--theme-color2), 0.9) 4.48%, rgba(var(--theme-color2), 1) 92.19%);
+    padding: 50px 50px 0 50px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 70px;
+    .join-effect {
+        .join-effect1 {
+            position: absolute;
+            left: -60px;
+            bottom: -40px;
+        }
+        .join-effect2 {
+            position: absolute;
+            right: -60px;
+            top: -40px;
+        }
+    }
+    .team-joining-sec {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -70px;
+    }
+}

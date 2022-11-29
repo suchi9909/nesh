@@ -1,0 +1,148 @@
+/*=====================
+    Marketing Scss start
+==========================*/
+// about section
+.about-img {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    box-shadow: none;
+    position: relative;
+}
+
+// sale growth section
+.sale-growth-sec {
+    position: relative;
+    z-index: 1;
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-50%);
+        background-color: #f6f7ff;
+        top: 50%;
+        z-index: -2;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+    }
+    .animated-shapes {
+        .letter {
+            position: absolute;
+            right: 0%;
+            top: 37%;
+            animation: up-down 4s ease-out infinite;
+        }
+        .dots-shape {
+            position: absolute;
+            left: 64%;
+            top: -5px;
+            z-index: -1;
+            animation: up-down 5s ease-out infinite;
+        }
+        .plus-shape {
+            position: absolute;
+            left: 0;
+            animation: zoom-in-zoom-out 2s ease-out infinite;
+        }
+    }
+    .sales-growth-content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+// recent project section
+.projects-section {
+    position: relative;
+    .project-effect {
+        position: absolute;
+        left: 0;
+        top: -4%;
+    }
+    .line-effect {
+        position: absolute;
+        right: 0;
+        bottom: -49%;
+    }
+    .tab-style-1 {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .tab-content {
+        margin-top: 30px;
+        .tab-pane {
+            &.show {
+                .project-box {
+                    animation: zoomIn 300ms ease-in-out;
+                }
+            }
+        }
+    }
+    .project-box {
+        background: linear-gradient(180deg, #f6f7ff 0%, rgba(var(--white), 1) 100%);
+        box-shadow: 0px 24px 30px rgba(var(--theme-color2), 0.04);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 30px;
+        height: 100%;
+        transform: scale(1);
+        transition: all 0.5s ease;
+        .popover-content {
+            display: none;
+            position: absolute;
+            left: 105%;
+            display: none;
+            font-size: 1.2rem;
+            background-color: rgba(230, 230, 230, 1);
+            padding: 10px 20px;
+            border-radius: 16px;
+            font-family: Tahoma, Verdana, Segoe, sans-serif;
+            font-weight: normal;
+            z-index: 111;
+            width: 300px;
+        }
+        .popover-content:hover {
+            display: none !important;
+        }
+        .popover-item:hover .popover-content {
+            display: block;
+        }
+        &:hover {
+            transform: scale(0.95);
+            transition: all 0.5s ease;
+        }
+    }
+}
+
+// statistics section
+.statistics-box {
+    box-shadow: 10.3165px 25.7914px 25.7914px rgba(var(--theme-color2), 0.05);
+    text-align: center;
+    > div {
+        padding: 40px;
+        background-color: rgba(var(--white), 1);
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+    }
+    .statistics-icon {
+        width: 44px;
+        height: 44px;
+        margin: 0 auto;
+        border-radius: 100%;
+        background-color: rgba(#725efe, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h2 {
+        font-size: 44px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    h5 {
+        font-weight: 500;
+        color: rgba(var(--content-color), 1);
+    }
+}

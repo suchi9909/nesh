@@ -1,0 +1,26 @@
+/*=====================
+    Animation Scss start
+==========================*/
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(0.8, 0.8);
+    }
+    50% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(0.8, 0.8);
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}

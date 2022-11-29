@@ -1,0 +1,22 @@
+/**=====================
+     footer section scss
+==========================**/
+.footer-style-1 {
+    background-color: #000248;
+    .marketing-title {
+        p {
+            width: 50%;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(var(--white), 0.6);
+        }
+        h2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(var(--white), 0.2);
+        }
+    }
+}

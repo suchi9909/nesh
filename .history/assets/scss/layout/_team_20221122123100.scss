@@ -1,0 +1,59 @@
+/*=====================
+    Team Scss start
+==========================*/
+.join-team-section {
+    background-image: url(../images/marketing/team-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 50px 50px 0 50px;
+    position: relative;
+    .join-effect {
+        .join-effect1 {
+            position: absolute;
+            left: -60px;
+            bottom: -40px;
+        }
+        .join-effect2 {
+            position: absolute;
+            right: -60px;
+            top: -40px;
+        }
+    }
+    .team-joining-sec {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -70px;
+        position: relative;
+        .postion-detail {
+            li {
+                position: absolute;
+                font-size: 18px;
+                font-weight: 500;
+                a {
+                    background-color: rgba(var(--white), 0.3);
+                    color: rgba(var(--white), 1);
+                    padding: 15px 30px;
+                    border-radius: 3px;
+                }
+                span {
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                    background-color: rgba(var(--white), 1);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: rgba(var(--theme-color2), 1);
+                    left: -20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &:first-child {
+                    left: 14%;
+                    top: 32%;
+                }
+            }
+        }
+    }
+}

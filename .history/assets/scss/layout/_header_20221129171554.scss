@@ -1,0 +1,87 @@
+/**=====================
+     header scss
+==========================**/
+
+header {
+    padding-top: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    transition: all 0.5s ease;
+    .header-logo {
+        @media (max-width: 576px) {
+            img {
+                width: 76%;
+            }
+        }
+    }
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .bar-option {
+        background: rgba(var(--white), 0.3);
+        box-shadow: 0px 14px 20px rgba(var(--theme-color1), 0.04);
+        backdrop-filter: blur(2px);
+        border-radius: 5px;
+        padding: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)))
+            calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
+        transition: all 0.5s ease;
+        i {
+            color: rgba(var(--black), 1);
+            font-weight: 600;
+        }
+        &:hover {
+            transition: all 0.5s ease;
+            transform: translateY(-5px);
+            box-shadow: 0px 7px 20px rgba(var(--theme-color1), 0.08);
+        }
+        &.btn-color2 {
+            background: radial-gradient(
+                59.91% 858.55% at 27.36% 100%,
+                rgba(var(--theme-color2), 1) 0%,
+                rgba(var(--theme-color2), 0.65) 100%
+            );
+            i {
+                color: rgba(var(--white), 1);
+            }
+        }
+    }
+}
+
+body {
+    &:after {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 0;
+        width: 100%;
+        background-color: rgba(var(--white), 1);
+        transition: height 0.5s ease-out;
+        box-shadow: 0px 8px 20px 0px rgba(var(--theme-color1), 0.1);
+    }
+    &.sticky-header {
+        &:after {
+            height: 77px;
+            transition: height 0.5s ease-out;
+        }
+        header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 2;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            transition: all 0.5s ease;
+            .header-logo,
+            .btn,
+            .bar-option {
+                z-index: 1;
+                transition: all 0.5s ease;
+            }
+        }
+    }
+}

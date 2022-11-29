@@ -1,0 +1,18 @@
+/*=====================
+    Tabs Scss start
+==========================*/
+.tab-style-1 {
+    &.nav-tabs {
+        border: none;
+        > li {
+            margin: 0 5px;
+        }
+        .nav-link {
+            border: none;
+            font-size: 18px;
+            color: rgba(var(--title-color), 1);
+            font-weight: 500;
+            padding: 40px 26px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+/*=====================
+    Features Scss start
+==========================*/
+.marketing-feature {
+    padding: 40px;
+    background: linear-gradient(270deg, rgba(var(--theme-color2), 1) 23.43%, rgba(var(--theme-color2), 0.95) 50%);
+    border-radius: 20px;
+    .feature-counter {
+        margin-top: 45px;
+        li {
+            margin: 0 16px;
+        }
+    }
+}

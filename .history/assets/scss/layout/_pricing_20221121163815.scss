@@ -1,0 +1,108 @@
+/*=====================
+    pricing Scss start
+==========================*/
+.pricing-box {
+    box-shadow: 0px 24px 30px rgba(var(--theme-color2), 0.07);
+    margin: 30px;
+    > div {
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+        padding: 25px 25px 40px;
+        background-color: rgba(var(--white), 1);
+    }
+    .price-title {
+        padding: 0 20px;
+        h2 {
+            font-size: 30px;
+            font-weight: 700;
+        }
+        h4 {
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+    }
+    .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-radius: 0;
+        &.btn-light {
+            color: rgba(var(--theme-color2), 1);
+            background-color: rgba(var(--theme-color2), 0.1);
+        }
+    }
+    .subs-detail {
+        padding: 0 20px;
+        h2 {
+            color: rgba(var(--theme-color3), 1);
+            font-size: 40px;
+            margin-bottom: 16px;
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+    .pricing-details {
+        margin-top: 24px;
+        padding: 0 20px;
+        li {
+            color: rgba(var(--content-color), 1);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            + li {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.marketing-pricing-sec {
+    position: relative;
+    overflow: hidden;
+    .container {
+        padding: 0 50px;
+    }
+    .row {
+        margin: -30px;
+    }
+    .swiper-slide-next {
+        .pricing-box {
+            position: relative;
+            &:after {
+                border: 2px solid rgba(var(--black), 1);
+                content: "";
+                height: 90%;
+                position: absolute;
+                width: 90%;
+                z-index: -1;
+                left: -20px;
+                top: 69px;
+                transition: all 0.5s ease;
+                transform: rotate(-1deg);
+            }
+            .price-btn {
+                background-color: rgba(var(--theme-color2), 1);
+                color: rgba(var(--white), 1);
+            }
+        }
+    }
+    .animated-shapes {
+        .shape1 {
+            position: absolute;
+            left: -4%;
+            top: 0;
+        }
+        .shape2 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .shape3 {
+            position: absolute;
+            bottom: 0;
+            left: 15%;
+            animation: mymove 5s infinite;
+        }
+    }
+}

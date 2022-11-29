@@ -1,0 +1,28 @@
+/**=====================
+     logo section scss
+==========================**/
+.logo-marketing {
+    .logo-slider {
+        filter: drop-shadow(0px 24px 30px rgba(var(--theme-color2), 0.07));
+        .clipath-wrap {
+            padding: 45px 65px;
+            clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+            background-color: rgba(var(--white));
+            position: relative;
+            &:after {
+                border: 2px solid rgba(var(--black), 1);
+                content: "";
+                height: 90%;
+                position: absolute;
+                width: 90%;
+                z-index: -1;
+                left: -20px;
+                top: 40px;
+                transform: rotate(-1deg);
+            }
+            .logo-img {
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.app-showcase {
+    --title-color: 1, 1, 1;
+    --content-color: 82, 82, 108;
+    --theme-color1: 0, 144, 144;
+    --theme-color2: 0, 0, 0;
+    --theme-color3: 255, 125, 5;
+}
+
+// utils scss files
+@import "utils/variables";
+
+// base scss files
+@import "base/reset";
+@import "base/typography";
+
+// components scss files
+@import "components/button";
+@import "components/accordion";
+@import "components/animation";
+@import "components/progressbar";
+@import "components/title";
+@import "components/tabs";
+@import "components/form";
+@import "components/slider";
+@import "components/custom-cursor";
+
+// layout scss files
+@import "layout/nav";
+@import "layout/header";
+@import "layout/home";
+@import "layout/logo";
+@import "layout/service";
+@import "layout/features";
+@import "layout/pricing";
+@import "layout/testimonial";
+@import "layout/team";
+@import "layout/blog";
+@import "layout/footer";
+@import "layout/backtotop";
+@import "layout/process";
+
+// pages
+@import "pages/marketing";
+@import "pages/app-showcase";
+
+// themes scss files

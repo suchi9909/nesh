@@ -1,0 +1,63 @@
+/*=====================
+    Typography CSS start
+==========================*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: $dm-sans;
+}
+h1 {
+  font-weight: bold;
+  font-size: 68px;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 16px;
+  color: rgba(var(--content-color), 1);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  [dir="rtl"] & {
+    padding-inline-start: 0;
+    margin-inline-start: 0;
+  }
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}

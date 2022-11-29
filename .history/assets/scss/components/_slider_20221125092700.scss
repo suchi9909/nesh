@@ -1,0 +1,20 @@
+/*=====================
+    Slider Scss start
+==========================*/
+
+.swiper-arrow-round {
+    .swiper-button-next {
+        &:after {
+            content: "\EA6C";
+            font-family: remixicon !important;
+            font-style: normal;
+        }
+    }
+    .swiper-button-prev {
+        &:after {
+            content: "\EA60";
+            font-family: remixicon !important;
+            font-style: normal;
+        }
+    }
+}
