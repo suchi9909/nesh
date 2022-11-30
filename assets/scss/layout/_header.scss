@@ -67,6 +67,9 @@ body {
     &.sticky-header {
         &:after {
             height: 77px;
+            @media (max-width: 576px) {
+                height: 70px;
+            }
         }
         header {
             position: fixed;

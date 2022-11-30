@@ -59,7 +59,15 @@ var swiper5half = new Swiper(".slider-5-half", {
     autoHeight: true,
     breakpoints: {
         0: {
+            slidesPerView: 1,
+            spaceBetween: 25,
+        },
+        576: {
             slidesPerView: 1.5,
+            spaceBetween: 15,
+        },
+        767: {
+            slidesPerView: 2,
             spaceBetween: 15,
         },
         991: {
@@ -77,20 +85,19 @@ var swiper5half = new Swiper(".slider-5-half", {
 var swiper5 = new Swiper(".slider-5", {
     slidesPerView: 5,
     spaceBetween: 20,
-    centeredSlides: true,
     loop: true,
     breakpoints: {
         0: {
             slidesPerView: 2,
             spaceBetween: 15,
         },
-        991: {
+        576: {
             slidesPerView: 3,
         },
-        1199: {
+        991: {
             slidesPerView: 4,
         },
-        1400: {
+        1199: {
             slidesPerView: 5,
         },
     },
@@ -109,6 +116,10 @@ var processSlide = new Swiper(".process-slide", {
             slidesPerView: 2,
             spaceBetween: 15,
         },
+        400: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
         991: {
             slidesPerView: 3,
         },
@@ -119,6 +130,10 @@ var processSlide = new Swiper(".process-slide", {
             slidesPerView: 5,
         },
     },
+    navigation: {
+        nextEl: ".process-next",
+        prevEl: ".process-prev",
+    },
 });
 
 var screenSlide = new Swiper(".screenshot-slide", {
@@ -128,13 +143,17 @@ var screenSlide = new Swiper(".screenshot-slide", {
     centeredSlides: true,
     breakpoints: {
         0: {
-            slidesPerView: 2,
+            slidesPerView: 1.5,
             spaceBetween: 15,
         },
-        991: {
+        380: {
+            slidesPerView: 2.5,
+            spaceBetween: 15,
+        },
+        576: {
             slidesPerView: 3,
         },
-        1199: {
+        991: {
             slidesPerView: 4,
         },
         1400: {
@@ -156,9 +175,16 @@ var pricing3 = new Swiper(".pricing-3", {
     breakpoints: {
         0: {
             slidesPerView: 1,
+            spaceBetween: 0,
         },
-        768: {
+        480: {
+            slidesPerView: 1.5,
+        },
+        767: {
             slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 2.5,
         },
         1199: {
             slidesPerView: 3,
@@ -172,9 +198,14 @@ var team4 = new Swiper(".team-4", {
     breakpoints: {
         0: {
             slidesPerView: 1,
+            spaceBetween: 15,
         },
-        768: {
+        420: {
             slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        991: {
+            slidesPerView: 3,
         },
         1199: {
             slidesPerView: 4,

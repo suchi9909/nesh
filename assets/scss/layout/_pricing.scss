@@ -151,7 +151,7 @@
         width: 100%;
         justify-content: center;
         position: relative;
-        margin-bottom: 38px;
+        margin-bottom: calc(20px + (38 - 20) * ((100vw - 320px) / (1920 - 320)));
         h4 {
             margin-bottom: 0;
             color: rgba(var(--title-color), 1);
@@ -164,6 +164,7 @@
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
+                font-size: calc(16px + (40 - 16) * ((100vw - 320px) / (1920 - 320)));
             }
             img {
                 position: absolute;
@@ -174,8 +175,17 @@
     }
     .swiper {
         padding: 50px;
+        @media (max-width: 1400px) {
+            padding: 34px 0;
+        }
+        @media (max-width: 480px) {
+            padding: 0;
+        }
         .swiper-slide-active {
             transform: scale(1.15);
+            @media (max-width: 480px) {
+                transform: scale(1);
+            }
             .pricing-box {
                 background-color: rgba(var(--theme-color1), 1);
                 color: rgba(var(--white), 1);
@@ -203,7 +213,8 @@
     }
     .pricing-box {
         background-color: rgba(#f4f4f6, 0.5);
-        padding: 40px 30px;
+        padding: calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)))
+            calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
         border-radius: 16px;
         .price-title {
             display: flex;
@@ -219,19 +230,20 @@
             h2 {
                 margin-bottom: 0;
                 margin-top: 5px;
+                font-size: calc(18px + (40 - 18) * ((100vw - 320px) / (1920 - 320)));
                 span {
                     font-size: 16px;
                 }
             }
         }
         p {
-            font-size: 18px;
+            font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
             color: rgba(var(--content-color), 1);
             margin-bottom: 0;
         }
         .pricing-details {
-            padding-top: 25px;
-            margin-top: 25px;
+            padding-top: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+            margin-top: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
             border-top: 1px solid rgba(#52526c, 0.2);
             li {
                 display: flex;
@@ -246,12 +258,13 @@
                 }
                 h4 {
                     margin-bottom: 0;
+                    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
                 }
                 span {
                     color: rgba(var(--title-color), 1);
                 }
                 + li {
-                    margin-top: 10px;
+                    margin-top: calc(4px + (10 - 4) * ((100vw - 320px) / (1920 - 320)));
                 }
             }
         }

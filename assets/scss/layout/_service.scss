@@ -133,6 +133,13 @@
 
 // app showcase service
 .app-service {
+    .row {
+        > div {
+            @media (max-width: 400px) {
+                width: 100%;
+            }
+        }
+    }
     .service-box {
         transition: all 0.5s ease;
         h3 {
@@ -171,6 +178,15 @@
             .service-icon {
                 &:after {
                     animation: rotate 5s normal linear infinite;
+                }
+            }
+        }
+        @media (max-width: 400px) {
+            text-align: center;
+            .service-icon {
+                &:after {
+                    left: 54%;
+                    transform: translateX(-50%);
                 }
             }
         }

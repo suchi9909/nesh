@@ -6,33 +6,40 @@
     position: relative;
     .swiper-button-next,
     .swiper-button-prev {
-        width: 48px;
-        height: 48px;
-        border: 1px solid #bdbbd4;
+        width: calc(38px + (48 - 38) * ((100vw - 320px) / (1920 - 320)));
+        height: calc(38px + (48 - 38) * ((100vw - 320px) / (1920 - 320)));
+        border: 1px solid rgba(var(--title-color), 0.1);
         border-radius: 100%;
         right: unset;
         top: unset;
-        bottom: 0;
+        bottom: unset;
+        top: unset;
         z-index: unset;
+        position: relative;
+        margin-top: 0;
+        transform: none;
         &:after {
             font-family: remixicon !important;
             font-style: normal;
-            font-size: 25px;
+            font-size: calc(18px + (25 - 18) * ((100vw - 320px) / (1920 - 320)));
             color: rgba(var(--content-color), 1);
         }
     }
     .swiper-button-next {
-        left: calc(50% + 30px);
-        transform: translateX(-50%);
         &:after {
             content: "\EA6C";
         }
     }
     .swiper-button-prev {
-        left: calc(50% - 30px);
-        transform: translateX(-50%);
         &:after {
             content: "\EA60";
         }
+    }
+    .swiper-buttons {
+        margin-top: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: calc(18px + (25 - 18) * ((100vw - 320px) / (1920 - 320)));
     }
 }

@@ -4,6 +4,9 @@
 .testimonial-style-1 {
     .swiper {
         margin: -20px 0;
+        @media (max-width: 576px) {
+            padding: 0 20px;
+        }
     }
     .marketing-title {
         position: relative;
@@ -61,6 +64,9 @@
     position: relative;
     .swiper {
         margin: -50px 0;
+        @media (max-width: 576px) {
+            padding: 0 20px;
+        }
         .swiper-wrapper {
             margin: 50px 0;
         }

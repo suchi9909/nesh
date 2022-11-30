@@ -86,7 +86,7 @@
 
 // app showcase
 .app-title {
-    margin-bottom: 50px;
+    margin-bottom: calc(30px + (50 - 30) * ((100vw - 320px) / (1920 - 320)));
     &.text-center {
         h2 {
             &:after {
@@ -103,7 +103,7 @@
         padding: 10px 14px;
         background-color: rgba(var(--theme-color1), 0.05);
         border-radius: 30px;
-        font-size: 16px;
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
         font-weight: 500;
         line-height: 1.2;
         margin-bottom: 8px;
@@ -113,15 +113,15 @@
             gap: 10px;
         }
         .round {
-            width: 20px;
-            height: 20px;
+            width: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
+            height: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
             border: 2px solid rgba(var(--theme-color1), 1);
             border-radius: 100%;
             position: relative;
             display: inline-block;
             span {
-                width: 7px;
-                height: 7px;
+                width: calc(5px + (7 - 5) * ((100vw - 320px) / (1920 - 320)));
+                height: calc(5px + (7 - 5) * ((100vw - 320px) / (1920 - 320)));
                 background-color: rgba(var(--theme-color1), 1);
                 border-radius: 100%;
                 display: block;
@@ -138,6 +138,7 @@
         font-family: $space-grotesk;
         text-transform: capitalize;
         font-weight: 700;
+        line-height: 1.5;
         &:after {
             content: "";
             position: absolute;
@@ -153,6 +154,9 @@
         margin-top: 20px;
         width: 50%;
         font-weight: 500;
+        @media (max-width: 991px) {
+            width: 100%;
+        }
     }
     &.text-light {
         .sub-title {

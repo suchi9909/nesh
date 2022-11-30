@@ -47,12 +47,21 @@
 .tab-style-2 {
     &.nav-tabs {
         display: flex;
-        width: max-content;
         margin: 0 auto;
+        overflow: auto;
+        width: max-content;
+        flex-wrap: nowrap;
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+        .nav-item {
+            width: 100%;
+            white-space: nowrap;
+        }
         .nav-link {
             border: none;
             margin: 0;
-            font-size: 18px;
+            font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
             color: rgba(var(--content-color), 1);
             font-weight: 500;
             position: relative;

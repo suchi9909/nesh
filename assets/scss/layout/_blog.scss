@@ -84,9 +84,6 @@
 .blog-style-2 {
     margin-bottom: -25px;
     position: relative;
-    .swiper {
-        padding: 25px 0;
-    }
     .blog-box {
         transform: translateY(0);
         transition: all 0.5s ease;
@@ -98,7 +95,7 @@
             color: rgba(var(--title-color), 1);
             font-weight: 500;
             margin-bottom: 0;
-            font-size: 22px;
+            font-size: calc(17px + (22 - 17) * ((100vw - 320px) / (1920 - 320)));
             transition: all 0.5s ease;
         }
         h5 {
