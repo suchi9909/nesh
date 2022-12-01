@@ -6,6 +6,14 @@
     --theme-color3: 255, 125, 5;
 }
 
+.fitness-layout {
+    --title-color: 19, 39, 66;
+    --content-color: 112, 112, 112;
+    --theme-color1: 255, 127, 109;
+    --theme-color2: 19, 39, 66;
+    --theme-color3: 45, 167, 113;
+}
+
 // utils scss files
 @import "utils/variables";
 
@@ -42,6 +50,7 @@
 @import "layout/backtotop";
 @import "layout/process";
 @import "layout/app";
+@import "layout/category";
 
 // pages
 @import "pages/marketing";

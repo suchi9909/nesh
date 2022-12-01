@@ -68,6 +68,17 @@
     }
 }
 
+.btn-dark {
+    background: radial-gradient(
+        59.91% 858.55% at 27.36% 100%,
+        rgba(var(--black), 1) 0%,
+        rgba(var(--black), 0.65) 100%
+    ) !important;
+    i {
+        color: rgba(var(--white), 1) !important;
+    }
+}
+
 .play-btn {
     color: rgba(var(--title-color));
     font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));

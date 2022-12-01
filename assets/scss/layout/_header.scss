@@ -38,16 +38,6 @@ header {
             transform: translateY(-5px);
             box-shadow: 0px 7px 20px rgba(var(--theme-color1), 0.08);
         }
-        &.btn-color2 {
-            background: radial-gradient(
-                59.91% 858.55% at 27.36% 100%,
-                rgba(var(--theme-color2), 1) 0%,
-                rgba(var(--theme-color2), 0.65) 100%
-            );
-            i {
-                color: rgba(var(--white), 1);
-            }
-        }
     }
 }
 

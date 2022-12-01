@@ -171,3 +171,34 @@
         }
     }
 }
+
+// fitness app
+.fitness-title {
+    margin-bottom: 25px;
+    h4 {
+        color: rgba(var(--theme-color1), 1);
+        font-weight: 500;
+        position: relative;
+        padding-left: 50px;
+        &:after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: rgba(var(--theme-color1), 1);
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    h2 {
+        color: rgba(var(--title-color), 1);
+        font-weight: 500;
+        margin-bottom: 22px;
+    }
+    p {
+        color: rgba(var(--content-color), 1);
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
