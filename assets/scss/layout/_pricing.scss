@@ -273,3 +273,98 @@
         }
     }
 }
+
+// fitness pricing
+.fitness-pricing-sec {
+    .pricing-wrapper {
+        padding: 0 115px 0 160px;
+    }
+    .pricing-info {
+        background-image: url("../images/fitness/pricing-info-bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 45px 25px;
+        color: rgba(var(--white), 1);
+        border-radius: 20px;
+        position: relative;
+        height: 100%;
+        p,
+        a {
+            color: rgba(var(--white), 1);
+        }
+        p {
+            margin-top: 26px;
+            margin-bottom: 16px;
+        }
+        h3 {
+            font-size: 26px;
+            font-weight: 500;
+        }
+        img {
+            position: absolute;
+            bottom: 0;
+            right: -20px;
+        }
+    }
+    .swiper {
+        padding: 0 45px 0 0;
+        .swiper-slide {
+            height: 100%;
+            .pricing-box {
+                height: 100%;
+            }
+        }
+    }
+    .pricing-box {
+        background: rgba(var(--white), 1);
+        box-shadow: 15px 14px 30px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        padding: 25px;
+        position: relative;
+        .price-title {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            margin-bottom: 25px;
+            h3 {
+                font-size: 26px;
+                font-weight: 500;
+                color: rgba(var(--title-color), 1);
+            }
+        }
+        h4 {
+            font-weight: 500;
+            color: rgba(var(--content-color), 1);
+        }
+        .pricing-details {
+            margin-top: 25px;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-bottom: 1px dashed #ddd;
+            li {
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+                font-size: 18px;
+                font-weight: 500;
+                color: rgba(var(--title-color), 1);
+                i {
+                    color: #2da771;
+                }
+                + li {
+                    margin-top: 30px;
+                }
+            }
+        }
+        h2 {
+            font-size: 30px;
+            margin-bottom: 0;
+            span {
+                font-size: 18px;
+            }
+        }
+        .btn {
+            margin-top: 80px;
+        }
+    }
+}

@@ -34,3 +34,58 @@
         }
     }
 }
+
+// fitness team section
+.fitness-team-section {
+    .team-box {
+        display: flex;
+        .team-img {
+            width: calc(100% - 75px);
+            position: relative;
+            .share-options {
+                padding: 15px 15px;
+                background: rgba(var(--white), 0.5);
+                backdrop-filter: blur(1.60181px);
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                border-radius: 6px;
+                height: 52px;
+                overflow: hidden;
+                transition: all 0.5s ease-in-out;
+                li {
+                    display: block;
+                    a {
+                        display: block;
+                        line-height: 1;
+                    }
+                    i {
+                        font-size: 22px;
+                        color: rgba(var(--title-color), 1);
+                    }
+                    + li {
+                        margin-top: 10px;
+                    }
+                }
+                &:hover {
+                    height: auto;
+                    transition: height 0.5s ease;
+                }
+            }
+        }
+        .team-content {
+            writing-mode: vertical-rl;
+            h5 {
+                font-weight: 500;
+                color: rgba(var(--title-color), 1);
+                margin-left: 5px;
+            }
+            h3 {
+                font-size: 30px;
+                font-weight: 500;
+                color: rgba(var(--content-color), 0.6);
+                margin-left: 12px;
+            }
+        }
+    }
+}

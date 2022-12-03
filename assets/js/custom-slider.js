@@ -51,6 +51,20 @@ var swiper3 = new Swiper(".slider-3", {
     },
 });
 
+var swiper3 = new Swiper(".slider-2", {
+    slidesPerView: 2,
+    autoHeight: true,
+    spaceBetween: 30,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        }
+    },
+});
+
 var swiper5half = new Swiper(".slider-5-half", {
     slidesPerView: 4.5,
     spaceBetween: 30,

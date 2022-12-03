@@ -1,23 +1,6 @@
 /*=====================
     Marketing Scss start
 ==========================*/
-// about section
-.marketing-about {
-    .about-img {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        box-shadow: none;
-        position: relative;
-        img {
-            @media (max-width: 991px) {
-                width: 70%;
-                margin: 0 auto;
-            }
-        }
-    }
-}
-
 // sale growth section
 .sale-growth-sec {
     position: relative;

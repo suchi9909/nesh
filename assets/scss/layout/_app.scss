@@ -1,6 +1,7 @@
 /*=====================
     App Scss start
 ==========================*/
+// app showcase
 .app-section {
     position: relative;
     padding-top: 70px;
@@ -56,6 +57,71 @@
                 right: 8%;
                 top: 20%;
             }
+        }
+    }
+}
+
+// fitness
+.fitness-app-sec {
+    .app-content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .app-listing {
+        li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            h3 {
+                font-weight: 500;
+                color: rgba(var(--title-color), 1);
+            }
+            h4 {
+                font-weight: 500;
+                color: rgba(var(--content-color), 1);
+            }
+            + li {
+                margin-top: 30px;
+            }
+        }
+    }
+    .store-btn {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-top: 30px;
+    }
+    .app-img {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        margin-bottom: -25px;
+        .girl-img {
+            position: absolute;
+            left: -21%;
+            bottom: 60px;
+        }
+        .shape-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+            width: 82%;
+            height: 82%;
+            background: rgba(var(--theme-color1), 1);
+            top: 20px;
+            right: 0;
+            transform: rotate(-180deg);
+            animation: 30s ease-in-out 0s infinite alternate both running transform,
+                60s ease-in-out 0s infinite normal both running;
+            z-index: -1;
         }
     }
 }

@@ -1,0 +1,187 @@
+/*=====================
+    Fitness Scss start
+==========================*/
+// counter section
+.fitness-counter-sec {
+    overflow: hidden;
+    .counter-box {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        position: relative;
+        .effect {
+            position: absolute;
+            left: -40px;
+            top: -50px;
+            span {
+                -webkit-background-clip: text;
+                -webkit-text-stroke: 1px #232323;
+                color: rgba(var(--black), 0);
+                font-size: 255px;
+                opacity: 0.08;
+                line-height: 1;
+                font-weight: 500;
+            }
+        }
+        h1 {
+            font-size: 88px;
+            font-weight: 500;
+            line-height: 1;
+            margin: -10px 0;
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+            width: 50%;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.fitness-program-section {
+    position: relative;
+    .animated-effect {
+        .bottle-img {
+            position: absolute;
+            left: 7%;
+            top: 17%;
+        }
+        .cap-img {
+            position: absolute;
+        }
+    }
+    .middle-chacter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .blob-img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            transform: rotate(-180deg);
+            animation: transform 30s ease-in-out infinite both alternate, 60s ease-in-out infinite both;
+        }
+        .arrows-imgs {
+            img {
+                position: absolute;
+                z-index: -1;
+            }
+            .arrow1 {
+                left: 0;
+                top: 11%;
+            }
+            .arrow2 {
+                left: 5%;
+                top: 39%;
+            }
+            .arrow3 {
+                left: 1%;
+                bottom: 27%;
+            }
+            .arrow4 {
+                right: 7%;
+                top: 19%;
+            }
+            .arrow5 {
+                top: 36%;
+                right: 3%;
+            }
+            .arrow6 {
+                bottom: 27%;
+                right: 6%;
+            }
+        }
+    }
+    .program-listing {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        li {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            background: linear-gradient(94.45deg, #ffffff -0.99%, rgba(246, 246, 246, 0) 99.46%);
+            box-shadow: 26px 5px 30px rgb(34 10 6 / 4%);
+            padding: 15px 30px;
+            @media (max-width: 1199px) {
+                font-size: 14px;
+            }
+            h3 {
+                color: rgba(var(--title-color), 1);
+                font-weight: 500;
+                margin-bottom: calc(5px + (8 - 5) * ((100vw - 320px) / (1920 - 320)));
+                font-family: $space-grotesk;
+                @media (max-width: 1199px) {
+                    font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+                }
+            }
+            p {
+                font-size: 18px;
+                color: rgba(var(--content-color), 1);
+                font-weight: 500;
+                margin-bottom: 0;
+                @media (max-width: 1199px) {
+                    font-size: 14px;
+                }
+            }
+            img {
+                width: calc(35px + (45 - 35) * ((100vw - 320px) / (1920 - 320)));
+                height: calc(35px + (45 - 35) * ((100vw - 320px) / (1920 - 320)));
+                object-fit: contain;
+            }
+        }
+    }
+    .program-row {
+        > div {
+            &:first-child {
+                .program-listing {
+                    li {
+                        box-shadow: -8px 15px 20px rgba(0, 0, 0, 0.05);
+                        &:nth-child(even) {
+                            box-shadow: 26px 5px 30px rgba(34, 10, 6, 0.04);
+                            margin-left: 15px;
+                            transform: translateX(30px);
+                        }
+                    }
+                }
+            }
+            &:last-child {
+                .program-listing {
+                    li {
+                        box-shadow: 26px 5px 30px rgba(34, 10, 6, 0.04);
+                        &:nth-child(even) {
+                            box-shadow: -8px 15px 20px rgba(0, 0, 0, 0.05);
+                            margin-left: 15px;
+                            transform: translateX(-30px);
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 767px) {
+            > div {
+                &:first-child {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+// text animation
+.text-animation-section {
+    overflow: hidden;
+    h1 {
+        font-weight: 500;
+        font-size: 201.214px;
+        line-height: 112.7%;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px #232323;
+        color: rgba(var(--black), 0);
+        opacity: 0.2;
+        white-space: nowrap;
+    }
+}

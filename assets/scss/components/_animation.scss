@@ -66,16 +66,6 @@
     }
 }
 
-@keyframes movement_one {
-    0%,
-    100% {
-        transform: none;
-    }
-    50% {
-        transform: translate(50%, 20%) rotateY(10deg) scale(1.2);
-    }
-}
-
 @keyframes rotate {
     0% {
         transform: rotate3d(0, 0, 1, 0deg);
