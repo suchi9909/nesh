@@ -226,3 +226,12 @@ var team4 = new Swiper(".team-4", {
         },
     },
 });
+
+var slide1 = new Swiper(".slide-1", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".testi-next",
+        prevEl: ".testi-prev",
+    },
+});

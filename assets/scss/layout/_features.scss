@@ -47,7 +47,7 @@
             animation: mymove 5s infinite;
         }
     }
-    .marketing-title {
+    .title-style-1 {
         h5 {
             &:after {
                 background-color: rgba(var(--white), 0.1);
@@ -128,7 +128,7 @@
 }
 
 .app-features-section {
-    .app-title {
+    .title-style-2 {
         h2 {
             width: 50%;
             margin: 0 auto;

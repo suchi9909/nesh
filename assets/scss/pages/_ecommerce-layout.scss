@@ -1,0 +1,59 @@
+/*=====================
+    Ecommerce Scss start
+==========================*/
+.product-box {
+    position: relative;
+    .addtocart-btn {
+        background-color: rgba(var(--white), 1);
+        padding: 8px 30px;
+        color: rgba(var(--black), 1);
+        position: absolute;
+        bottom: 30%;
+        left: 50%;
+        width: 75%;
+        transform: translateX(-50%);
+        text-align: center;
+        box-shadow: 0px 4px 8px #e9e9e9;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease;
+        &:hover {
+            background: radial-gradient(
+                59.91% 858.55% at 27.36% 100%,
+                rgba(var(--black), 1) 0%,
+                rgba(var(--black), 0.65) 100%
+            ) !important;
+            color: rgba(var(--white), 1);
+            transition: all 0.5s ease;
+        }
+    }
+    .product-img {
+        margin-bottom: 20px;
+    }
+    .product-content {
+        text-align: center;
+        h6 {
+            font-weight: 500;
+            color: rgba(var(--content-color), 1);
+        }
+        a {
+            font-size: 22px;
+            font-weight: 500;
+            color: rgba(var(--title-color), 1);
+            display: block;
+            margin-bottom: 4px;
+        }
+        span {
+            font-size: 20px;
+            color: rgba(var(--title-color), 1);
+            margin-bottom: -5px;
+        }
+    }
+    &:hover {
+        .addtocart-btn {
+            bottom: 34%;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

@@ -37,19 +37,6 @@
             color: rgba(var(--title-color), 1);
             width: max-content;
             margin-bottom: -8px;
-
-            .arrow-icon {
-                position: relative;
-                top: -1px;
-                transition: transform 0.5s ease;
-                vertical-align: middle;
-            }
-
-            .arrow-icon--circle {
-                transition: stroke-dashoffset 0.5s ease;
-                stroke-dasharray: 95;
-                stroke-dashoffset: 95;
-            }
         }
         &:hover {
             transform: translateY(-8px);
@@ -108,6 +95,13 @@
             h3 {
                 color: rgba(var(--theme-color1), 1);
             }
+            .arrow-icon {
+                transform: translate3d(5px, 0, 0);
+            }
+
+            .arrow-icon--circle {
+                stroke-dashoffset: 0;
+            }
         }
     }
     .animated-effect {
@@ -115,6 +109,22 @@
             position: absolute;
             left: 0;
             top: 18%;
+            &.cap-img {
+                left: 2%;
+            }
         }
     }
+}
+
+.arrow-icon {
+    position: relative;
+    top: -1px;
+    transition: transform 0.5s ease;
+    vertical-align: middle;
+}
+
+.arrow-icon--circle {
+    transition: stroke-dashoffset 0.5s ease;
+    stroke-dasharray: 95;
+    stroke-dashoffset: 95;
 }

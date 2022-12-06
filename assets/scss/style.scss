@@ -14,6 +14,14 @@
     --theme-color3: 45, 167, 113;
 }
 
+.ecommerce-layout {
+    --title-color: 17, 16, 19;
+    --content-color: 99, 93, 111;
+    --theme-color1: 34, 144, 153;
+    --theme-color2: 17, 16, 19;
+    --theme-color3: 45, 167, 113;
+}
+
 // utils scss files
 @import "utils/variables";
 
@@ -53,10 +61,12 @@
 @import "layout/category";
 @import "layout/about";
 @import "layout/banner";
+@import "layout/newsletter";
 
 // pages
 @import "pages/marketing";
 @import "pages/app-showcase";
 @import "pages/fitness";
+@import "pages/ecommerce-layout";
 
 // themes scss files

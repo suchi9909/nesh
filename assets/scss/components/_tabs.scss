@@ -84,3 +84,35 @@
         }
     }
 }
+
+.tab-style-3 {
+    &.nav-tabs {
+        display: flex;
+        margin: 0 auto;
+        overflow: auto;
+        width: max-content;
+        flex-wrap: nowrap;
+        gap: 45px;
+        border-bottom: none;
+        margin-bottom: 30px;
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+        .nav-item {
+            width: 100%;
+            white-space: nowrap;
+        }
+        .nav-link {
+            border: none;
+            margin: 0;
+            font-size: calc(17px + (20 - 17) * ((100vw - 320px) / (1920 - 320)));
+            color: rgba(var(--content-color), 1);
+            font-weight: 500;
+            position: relative;
+            padding: 0;
+            &.active {
+                color: rgba(var(--theme-color1), 1);
+            }
+        }
+    }
+}

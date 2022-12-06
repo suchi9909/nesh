@@ -192,3 +192,41 @@
         }
     }
 }
+
+// ecommerce service
+.ecommerce-service-sec {
+    > div {
+        padding: 45px 0 !important;
+    }
+    .service-box {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .service-icon {
+            width: 67px;
+            height: 67px;
+            border-radius: 100%;
+            background-color: rgba(var(--theme-color1), 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(var(--white), 1);
+            i {
+                font-size: 25px;
+            }
+        }
+        .service-content {
+            h3 {
+                font-size: 22px;
+                font-weight: 500;
+                color: rgba(var(--white), 1);
+                margin-bottom: 3px;
+            }
+            p {
+                font-size: 16px;
+                color: rgba(var(--white), 1);
+                margin-bottom: 0;
+            }
+        }
+    }
+}

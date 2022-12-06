@@ -2,11 +2,11 @@
      footer section scss
 ==========================**/
 .footer-parallax {
-    background-color: #fff;
+    background-color: rgba(var(--white), 1);
     position: relative;
     z-index: 1;
     section {
-        background-color: white;
+        background-color: rgba(var(--white), 1);
     }
     footer {
         position: fixed;
@@ -23,7 +23,7 @@
         font-weight: 500;
         color: rgba(var(--white), 0.7);
     }
-    .marketing-title {
+    .title-style-1 {
         margin-bottom: calc(30px + (50 - 30) * ((100vw - 320px) / (1920 - 320)));
         p {
             width: 50%;
@@ -35,9 +35,9 @@
             }
         }
         h5 {
-            color: #f99313;
+            color: rgba(var(--theme-color1), 1);
             &:after {
-                background-color: rgba(#f99313, 0.2);
+                background-color: rgba(var(--theme-color1), 0.2);
             }
         }
         h2 {
@@ -85,7 +85,7 @@
                 position: absolute;
                 width: 28px;
                 height: 3px;
-                background-color: #f99313;
+                background-color: rgba(var(--theme-color3), 1);
                 left: 0;
                 bottom: -12px;
             }

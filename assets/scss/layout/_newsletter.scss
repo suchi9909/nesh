@@ -1,0 +1,37 @@
+/*=====================
+    Newsletter Scss start
+==========================*/
+.fitness-newsletter-section {
+    .newletter-box {
+        background: rgba(var(--white), 0.7);
+        backdrop-filter: blur(5px);
+        padding: 70px;
+        text-align: center;
+        h2 {
+            font-weight: 500;
+            color: rgba(var(--title-color), 1);
+            text-transform: uppercase;
+        }
+        h4 {
+            font-size: 18px;
+            font-weight: 500;
+            color: rgba(var(--content-color), 1);
+            margin: 0;
+        }
+        form {
+            margin: 25px 0 30px;
+            .input-group {
+                width: 62%;
+                gap: 15px;
+                margin: 0 auto;
+                .form-control {
+                    border-radius: 6px !important;
+                    border: none;
+                }
+                .btn {
+                    border-radius: 6px !important;
+                }
+            }
+        }
+    }
+}

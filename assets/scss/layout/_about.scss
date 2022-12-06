@@ -57,7 +57,7 @@
             }
         }
     }
-    .app-title {
+    .title-style-2 {
         margin-bottom: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
     }
     .about-listing {
@@ -170,5 +170,71 @@
                 font-weight: 400;
             }
         }
+    }
+}
+
+// ecommerce layout
+.ecommerce-about-sec {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        background-image: url("../images/ecommerce/abt-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    .abt-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .content-part {
+        h4 {
+            margin-bottom: 10px;
+            color: rgba(var(--content-color), 1);
+            font-weight: 500;
+            letter-spacing: 0.1em;
+        }
+        p {
+            margin-bottom: 0;
+            font-size: 18px;
+            color: rgba(var(--title-color), 1);
+            font-weight: 500;
+        }
+        li {
+            + li {
+                margin-top: 40px;
+            }
+        }
+        a {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 700;
+            color: rgba(var(--theme-color1), 1);
+            margin-top: 22px;
+            i {
+                transition: all 0.5s ease;
+            }
+            &:hover {
+                i {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+    .abt-img {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
     }
 }

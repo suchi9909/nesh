@@ -43,3 +43,33 @@
         gap: calc(18px + (25 - 18) * ((100vw - 320px) / (1920 - 320)));
     }
 }
+
+.arrow-style-1 {
+    .swiper-button-next,
+    .swiper-button-prev {
+        bottom: 30px;
+        &:after {
+            content: "\EA5F";
+            font-family: remixicon !important;
+            font-style: normal;
+            color: rgba(var(--title-color), 1);
+            font-size: 22px;
+        }
+    }
+    .swiper-button-prev {
+        left: calc(50% - 35px);
+        right: unset;
+        top: unset;
+        &:after {
+            content: "\EA5F";
+        }
+    }
+    .swiper-button-next {
+        right: calc(50% - 35px);
+        left: unset;
+        top: unset;
+        &:after {
+            content: "\EA6B";
+        }
+    }
+}

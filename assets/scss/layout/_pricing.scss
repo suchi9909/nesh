@@ -276,6 +276,13 @@
 
 // fitness pricing
 .fitness-pricing-sec {
+    margin-bottom: -40px;
+    position: relative;
+    .shoes-img {
+        position: absolute;
+        left: 4%;
+        top: 14%;
+    }
     .pricing-wrapper {
         padding: 0 115px 0 160px;
     }
@@ -287,7 +294,7 @@
         color: rgba(var(--white), 1);
         border-radius: 20px;
         position: relative;
-        height: 100%;
+        height: calc(100% - 40px);
         p,
         a {
             color: rgba(var(--white), 1);
@@ -307,7 +314,7 @@
         }
     }
     .swiper {
-        padding: 0 45px 0 0;
+        padding: 0 45px 40px 0;
         .swiper-slide {
             height: 100%;
             .pricing-box {

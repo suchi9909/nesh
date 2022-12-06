@@ -28,3 +28,67 @@
         }
     }
 }
+
+// ecommerce banner
+.ecommerce-banner-sec {
+    .banner-box {
+        position: relative;
+        .banner-content {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            padding: 65px 25px;
+            h4 {
+                color: rgba(var(--content-color), 1);
+                font-weight: 500;
+                span {
+                    color: rgba(var(--theme-color1), 1);
+                }
+            }
+            h3 {
+                font-size: 26px;
+                font-weight: 500;
+                color: rgba(var(--title-color), 1);
+                position: relative;
+                display: inline-block;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    background-color: rgba(var(--theme-color1), 0.2);
+                    height: 12px;
+                    width: 36%;
+                    right: 0;
+                    bottom: 2px;
+                }
+            }
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+        }
+        &.banner-sm {
+            .banner-content {
+                padding: 25px;
+                h4 {
+                    font-size: 16px;
+                    margin-bottom: 3px;
+                }
+                h3 {
+                    &:after {
+                        display: none;
+                    }
+                }
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    color: rgba(var(--title-color), 1);
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}

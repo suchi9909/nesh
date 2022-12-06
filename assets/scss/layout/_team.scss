@@ -37,6 +37,12 @@
 
 // fitness team section
 .fitness-team-section {
+    position: relative;
+    .bag-img {
+        position: absolute;
+        right: 5%;
+        bottom: -5%;
+    }
     .team-box {
         display: flex;
         .team-img {
