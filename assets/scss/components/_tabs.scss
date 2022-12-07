@@ -92,12 +92,9 @@
         overflow: auto;
         width: max-content;
         flex-wrap: nowrap;
-        gap: 45px;
+        gap: calc(20px + (45 - 20) * ((100vw - 320px) / (1920 - 320)));
         border-bottom: none;
-        margin-bottom: 30px;
-        @media (max-width: 576px) {
-            width: 100%;
-        }
+        margin-bottom: calc(10px + (30 - 10) * ((100vw - 320px) / (1920 - 320)));
         .nav-item {
             width: 100%;
             white-space: nowrap;

@@ -73,3 +73,13 @@
         }
     }
 }
+
+.arrow-style-2 {
+    .swiper-button-next,
+    .swiper-button-prev {
+        &:after {
+            font-size: 18px;
+            color: rgba(var(--title-color), 1);
+        }
+    }
+}

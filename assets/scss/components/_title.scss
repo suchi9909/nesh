@@ -216,9 +216,9 @@
 
 // ecommerce
 .title-style-4 {
-    margin-bottom: 35px;
+    margin-bottom: calc(15px + (35 - 15) * ((100vw - 320px) / (1920 - 320)));
     h4 {
-        font-size: 18px;
+        font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
         font-weight: 500;
         color: rgba(var(--content-color), 1);
     }
@@ -230,14 +230,14 @@
             content: "";
             position: absolute;
             background-color: rgba(var(--theme-color1), 0.2);
-            height: 14px;
+            height: calc(8px + (14 - 8) * ((100vw - 320px) / (1920 - 320)));
             width: 68%;
             right: 0;
             bottom: 4px;
         }
     }
     p {
-        font-size: 18px;
+        font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
         font-weight: 500;
         margin-bottom: 0;
     }

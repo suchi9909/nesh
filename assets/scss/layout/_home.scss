@@ -532,6 +532,9 @@
         z-index: -1;
         width: 32%;
         background-repeat: no-repeat;
+        @media (max-width: 576px) {
+            display: none;
+        }
     }
     .home-content {
         display: flex;
@@ -541,9 +544,14 @@
         padding-top: 70px;
         @media (max-width: 991px) {
             height: auto;
+            padding: 30px 0 50px;
         }
-        @media (max-width: 991px) {
-            padding: 50px 0 30px;
+        @media (max-width: 767px) {
+            width: 70%;
+        }
+        @media (max-width: 576px) {
+            width: 100%;
+            padding: 30px 0 30px;
         }
         h6 {
             padding: 7px 13px;
@@ -565,20 +573,20 @@
                 color: rgba(var(--theme-color1), 1);
             }
             @media (max-width: 1400px) {
-                font-size: calc(22px + (44 - 22) * ((100vw - 320px) / (1920 - 320)));
+                font-size: calc(22px + (50 - 22) * ((100vw - 320px) / (1920 - 320)));
             }
             @media (max-width: 991px) {
                 margin-bottom: 10px;
-                width: 60%;
-            }
-            @media (max-width: 576px) {
-                width: 80%;
+                width: 100%;
             }
         }
         p {
             font-size: calc(14px + 4 * (100vw - 320px) / 1600);
             margin: 12px 0 22px;
             width: 70%;
+            @media (max-width: 991px) {
+                width: 100%;
+            }
         }
     }
     .home-image {
@@ -589,6 +597,12 @@
         position: relative;
         padding-top: 77px;
         z-index: 1;
+        img {
+            @media (max-width: 991px) {
+                width: 70%;
+                padding-top: 30px;
+            }
+        }
         .shape-effect {
             position: absolute;
             right: 0;
@@ -599,6 +613,18 @@
             position: absolute;
             top: 0;
             left: 35%;
+            animation: slideUp 5s infinite;
+            @media (max-width: 1199px) {
+                margin-top: -70px;
+            }
+            @media (max-width: 991px) {
+                width: auto;
+                padding-top: 0;
+                margin-top: -160px;
+            }
+            @media (max-width: 576px) {
+                display: none;
+            }
         }
     }
 }

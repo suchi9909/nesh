@@ -75,3 +75,19 @@
         }
     }
 }
+
+// logo ecommerce
+.logo-ecommerce {
+    padding: 50px 0;
+    .logo-img {
+        background-color: rgba(var(--white), 0.5);
+        height: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        img {
+            width: 80%;
+        }
+    }
+}

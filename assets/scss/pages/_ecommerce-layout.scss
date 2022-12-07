@@ -37,14 +37,14 @@
             color: rgba(var(--content-color), 1);
         }
         a {
-            font-size: 22px;
+            font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1920 - 320)));
             font-weight: 500;
             color: rgba(var(--title-color), 1);
             display: block;
             margin-bottom: 4px;
         }
         span {
-            font-size: 20px;
+            font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
             color: rgba(var(--title-color), 1);
             margin-bottom: -5px;
         }
@@ -56,4 +56,10 @@
             visibility: visible;
         }
     }
+}
+
+.flower-effect {
+    position: absolute;
+    right: 0;
+    top: 6%;
 }

@@ -51,6 +51,23 @@ var swiper3 = new Swiper(".slider-3", {
     },
 });
 
+var blog3 = new Swiper(".blog-3", {
+    slidesPerView: 3,
+    autoHeight: true,
+    spaceBetween: 25,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1199: {
+            slidesPerView: 3,
+        },
+    },
+});
+
 var swiper3 = new Swiper(".slider-2", {
     slidesPerView: 2,
     autoHeight: true,
@@ -119,6 +136,27 @@ var swiper5 = new Swiper(".slider-5", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+});
+
+var slider6 = new Swiper(".slider-6", {
+    slidesPerView: 6,
+    spaceBetween: 1,
+    loop: true,
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        576: {
+            slidesPerView: 3,
+        },
+        991: {
+            slidesPerView: 4,
+        },
+        1199: {
+            slidesPerView: 6,
+        },
+    }
 });
 
 var processSlide = new Swiper(".process-slide", {
@@ -205,6 +243,7 @@ var pricing3 = new Swiper(".pricing-3", {
         },
     },
 });
+
 
 var team4 = new Swiper(".team-4", {
     slidesPerView: 4,

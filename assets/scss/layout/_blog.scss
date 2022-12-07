@@ -116,6 +116,62 @@
     }
 }
 
+.blog-style-3 {
+    background: linear-gradient(180deg, #f7f7f7 0%, #ffffff 100%);
+    position: relative;
+    .news-box {
+        .news-content {
+            margin-top: 15px;
+            label {
+                padding: 5px 14px;
+                background-color: rgba(var(--theme-color1), 1);
+                color: white;
+                font-size: 14px;
+                border-radius: 6px;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+            h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            h5 {
+                color: rgba(var(--content-color), 1);
+                font-weight: 500;
+                margin-bottom: 15px;
+                span {
+                    color: rgba(var(--title-color), 1);
+                }
+            }
+            p {
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 16px;
+                color: rgba(var(--title-color), 1);
+            }
+        }
+    }
+    .animated-effect {
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
 .arrow-icon {
     position: relative;
     top: -1px;

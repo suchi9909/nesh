@@ -222,4 +222,84 @@
             }
         }
     }
+    &.footer-light {
+        background-color: rgba(var(--white), 1);
+        p {
+            color: rgba(var(--content-color), 1);
+        }
+        .form-style-1 {
+            .form-control {
+                background-color: #f0eae7;
+                color: rgba(var(--title-color), 1);
+                &::placeholder {
+                    color: rgba(var(--content-color), 1);
+                }
+            }
+        }
+        .title-style-1 {
+            p {
+                color: rgba(var(--content-color), 1);
+            }
+            h5 {
+                color: rgba(var(--theme-color1), 1);
+                &:after {
+                    background-color: rgba(var(--theme-color1), 0.2);
+                }
+            }
+            h2 {
+                border-bottom: 1px solid rgba(var(--white), 0.2);
+            }
+        }
+        .social-links {
+            li {
+                a {
+                    color: rgba(var(--content-color), 0.8);
+                    background-color: rgba(var(--white), 0.1);
+                    border: 1px solid rgba(var(--content-color), 0.5);
+                }
+            }
+        }
+        .footer-title {
+            h3 {
+                color: rgba(var(--title-color), 1);
+                &:after {
+                    background-color: rgba(var(--theme-color3), 1);
+                }
+            }
+        }
+        .footer-content {
+            h4 {
+                color: rgba(var(--theme-color2), 1);
+            }
+            p,
+            address {
+                color: rgba(var(--content-color), 1);
+                a {
+                    color: rgba(var(--content-color), 0.7);
+                    &:hover {
+                        color: rgba(var(--white), 1);
+                    }
+                }
+            }
+        }
+        .form-check {
+            .form-check-label {
+                color: rgba(var(--content-color), 0.7);
+            }
+        }
+        .footer-copywrite {
+            border-color: rgba(var(--title-color), 0.2);
+            ul {
+                li {
+                    border-color: rgba(var(--title-color), 0.5);
+                    a {
+                        color: rgba(var(--title-color), 0.5);
+                        &:hover {
+                            color: rgba(var(--title-color), 1);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
