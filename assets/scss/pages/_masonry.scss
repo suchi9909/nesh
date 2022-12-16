@@ -1,0 +1,109 @@
+/*=====================
+    Masonry Scss start
+==========================*/
+.masonry-section {
+    .product-box {
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+        }
+        .hover-content {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: calc(100% - 32px);
+            height: calc(100% - 32px);
+            background: rgba(var(--white), 0.8);
+            box-shadow: inset 0px 2px 1px rgba(var(--white), 1);
+            backdrop-filter: blur(5px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            transform: translate(-50%, -50%) scale(0.5);
+            transition: all 0.5s ease;
+            @media (max-width: 767px) {
+                opacity: 1;
+                visibility: visible;
+                position: relative;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: auto;
+                justify-content: flex-start;
+                transform: none;
+                text-align: left;
+                margin-top: 10px;
+            }
+            h2 {
+                font-size: calc(16px + (34 - 16) * ((100vw - 320px) / (1920 - 320)));
+                color: rgba(var(--black), 1);
+                font-family: $prata;
+                font-weight: 400;
+                margin-bottom: 8px;
+                a {
+                    color: rgba(var(--black), 1);
+                }
+            }
+            h4 {
+                color: rgba(var(--black), 0.5);
+                margin-bottom: 8px;
+                font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
+                @media (max-width: 767px) {
+                    margin-bottom: 0;
+                }
+            }
+            .action-options {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid rgba(var(--black), 0.6);
+                width: max-content;
+                margin: 0 auto;
+                li {
+                    width: 42px;
+                    height: 42px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.5s ease;
+                    a {
+                        color: rgba(var(--black), 0.6);
+                    }
+                    i {
+                        font-size: 20px;
+                    }
+                    + li {
+                        border-left: 1px solid rgba(var(--black), 0.6);
+                    }
+                    &:hover {
+                        background-color: rgba(var(--black), 0.6);
+                        transition: all 0.5s ease;
+                        a {
+                            color: rgba(var(--white), 1);
+                        }
+                    }
+                }
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+        }
+        &:hover {
+            .hover-content {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(-50%, -50%) scale(1);
+                @media (max-width: 767px) {
+                    transform: none;
+                }
+            }
+        }
+    }
+}
+
+.tooltip-inner {
+    font-size: 16px;
+}

@@ -53,7 +53,6 @@ var swiper3 = new Swiper(".slider-3", {
 
 var blog3 = new Swiper(".blog-3", {
     slidesPerView: 3,
-    autoHeight: true,
     spaceBetween: 25,
     breakpoints: {
         0: {
@@ -65,6 +64,31 @@ var blog3 = new Swiper(".blog-3", {
         1199: {
             slidesPerView: 3,
         },
+    },
+});
+
+var podcast3 = new Swiper(".podcast-3", {
+    slidesPerView: 3.5,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 1.5,
+        },
+        991: {
+            slidesPerView: 2.5,
+        },
+        1400: {
+            slidesPerView: 3.5,
+        },
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
     },
 });
 

@@ -22,6 +22,28 @@
     --theme-color3: 45, 167, 113;
 }
 
+.podcast-layout {
+    --title-color: 19, 39, 66;
+    --content-color: 99, 93, 111;
+    --theme-color1: 48, 80, 125;
+    --theme-color2: 255, 104, 83;
+    --theme-color3: 45, 167, 113;
+}
+
+.masonry-layout {
+    --title-color: 0, 0, 0;
+    --content-color: 23, 23, 23;
+    --theme-color1: 0, 0, 0;
+    --theme-color2: 23, 23, 23;
+}
+
+.charity-layout {
+    --title-color: 27, 27, 27;
+    --content-color: 95, 95, 95;
+    --theme-color1: 1, 83, 102;
+    --theme-color2: 255, 85, 99;
+}
+
 // utils scss files
 @import "utils/variables";
 
@@ -62,11 +84,14 @@
 @import "layout/about";
 @import "layout/banner";
 @import "layout/newsletter";
+@import "layout/player";
 
 // pages
 @import "pages/marketing";
 @import "pages/app-showcase";
 @import "pages/fitness";
 @import "pages/ecommerce-layout";
+@import "pages/podcast";
+@import "pages/masonry";
 
 // themes scss files

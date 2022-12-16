@@ -105,7 +105,7 @@
             display: flex;
             align-items: flex-start;
             gap: 20px;
-            background: linear-gradient(94.45deg, #ffffff -0.99%, rgba(246, 246, 246, 0) 99.46%);
+            background: linear-gradient(94.45deg, rgba(var(--white), 1) -0.99%, rgba(246, 246, 246, 0) 99.46%);
             box-shadow: 26px 5px 30px rgb(34 10 6 / 4%);
             padding: 15px 30px;
             @media (max-width: 1199px) {

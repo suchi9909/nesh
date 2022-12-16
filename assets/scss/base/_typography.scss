@@ -17,6 +17,15 @@ body {
   &.public-sans {
     font-family: $public-sans;
   }
+  &.prata-font {
+    font-family: $prata;
+  }
+  &.raleway-font {
+    font-family: $raleway;
+  }
+  &.playfair-font {
+    font-family: $playfair-display;
+  }
 }
 
 h1 {

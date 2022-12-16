@@ -82,4 +82,22 @@
             color: rgba(var(--title-color), 1);
         }
     }
+    @media (max-width: 576px) {
+        .swiper-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 8px;
+            .swiper-button-next,
+            .swiper-button-prev {
+                position: relative;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: 0;
+            }
+        }
+    }
 }

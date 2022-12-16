@@ -37,7 +37,7 @@
             }
             &.active {
                 color: rgba(var(--theme-color2), 1);
-                background: #ffffff;
+                background: rgba(var(--white), 1);
                 filter: drop-shadow(0px 14px 20px rgba(var(--theme-color2), 0.06));
             }
         }
@@ -110,6 +110,13 @@
             &.active {
                 color: rgba(var(--theme-color1), 1);
             }
+        }
+    }
+}
+.tab-pane {
+    &.show {
+        .product-box {
+            animation: zoomIn 300ms ease-in-out;
         }
     }
 }

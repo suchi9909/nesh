@@ -95,3 +95,90 @@
         }
     }
 }
+
+// podcast team section
+.podcast-team-sec {
+    .row {
+        > div {
+            &:nth-last-child(-n + 2) {
+                .team-content {
+                    order: -1;
+                    @media (max-width: 991px) {
+                        order: 1;
+                    }
+                }
+            }
+            @media (max-width: 991px) {
+                &:nth-child(even) {
+                    .team-content {
+                        order: -1;
+                    }
+                }
+            }
+        }
+    }
+    .team-box {
+        display: flex;
+        align-items: center;
+        > * {
+            width: 50%;
+        }
+        .team-content {
+            padding: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+            h3 {
+                font-size: 26px;
+                color: rgba(var(--title-color), 1);
+                margin-bottom: 0;
+                font-weight: 500;
+                margin-bottom: 5px;
+                @media (max-width: 1199px) {
+                    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+                }
+            }
+            h4 {
+                color: rgba(var(--theme-color2), 1);
+                font-weight: 500;
+                @media (max-width: 1199px) {
+                    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+                }
+            }
+            p {
+                font-weight: 500;
+                color: rgba(var(--content-color), 1);
+                margin: 26px 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                @media (max-width: 1199px) {
+                    font-size: 14px;
+                    margin: calc(8px + (16 - 8) * ((100vw - 320px) / (1920 - 320))) 0;
+                    -webkit-line-clamp: 3;
+                }
+                @media (max-width: 420px) {
+                    display: none;
+                }
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                gap: calc(10px + (16 - 10) * ((100vw - 320px) / (1920 - 320)));
+                a {
+                    font-size: 20px;
+                    color: rgba(var(--content-color), 1);
+                    transition: all 0.5s ease;
+                    @media (max-width: 1199px) {
+                        font-size: 16px;
+                    }
+                    &:hover {
+                        color: rgba(var(--theme-color2), 1);
+                        transform: scale(1.3);
+                        display: inline-block;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
+        }
+    }
+}

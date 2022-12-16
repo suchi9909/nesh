@@ -226,6 +226,7 @@
         position: relative;
         display: inline-block;
         text-transform: uppercase;
+        margin-top: -8px;
         &:after {
             content: "";
             position: absolute;
@@ -240,5 +241,45 @@
         font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
         font-weight: 500;
         margin-bottom: 0;
+    }
+}
+
+// podcast
+.title-style-5 {
+    margin-bottom: calc(16px + (36 - 16) * ((100vw - 320px) / (1920 - 320)));
+    h5 {
+        color: rgba(var(--theme-color2), 1);
+        margin-bottom: 0;
+    }
+    h2 {
+        color: rgba(var(--title-color));
+        position: relative;
+        margin-top: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+        margin-bottom: 0;
+        width: 94%;
+        text-transform: capitalize;
+        @media (max-width: 991px) {
+            width: 60%;
+        }
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+    }
+    p {
+        font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
+        margin: 12px 0;
+        width: 65%;
+        @media (max-width: 991px) {
+            width: 95%;
+        }
+    }
+    &.text-center {
+        h2 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p {
+            margin: 12px auto;
+        }
     }
 }

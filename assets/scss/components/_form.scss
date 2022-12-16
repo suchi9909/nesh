@@ -1,6 +1,18 @@
 /*=====================
     form Scss start
 ==========================*/
+.input-group {
+    > .form-control,
+    > .form-floating,
+    > .form-select {
+        &:focus,
+        &:focus-within {
+            box-shadow: none;
+            z-index: unset;
+        }
+    }
+}
+
 .form-style-1 {
     .form-control {
         border-radius: 5px;

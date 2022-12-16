@@ -196,12 +196,28 @@
 // ecommerce service
 .ecommerce-service-sec {
     > div {
-        padding: 45px 0 !important;
+        padding: calc(25px + (45 - 25) * ((100vw - 320px) / (1920 - 320))) 0 !important;
+        position: relative;
+        z-index: 1;
+        &:after {
+            content: "";
+            position: absolute;
+            background: radial-gradient(208.54% 208.54% at 50% 50%, rgba(1, 1, 1, 0) 0%, #010101 100%);
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
     }
     .service-box {
         display: flex;
         align-items: center;
         gap: 15px;
+        @media (max-width: 576px) {
+            display: block;
+            text-align: center;
+        }
         .service-icon {
             width: 67px;
             height: 67px;
@@ -211,8 +227,16 @@
             align-items: center;
             justify-content: center;
             color: rgba(var(--white), 1);
+            transition: all 0.5s ease;
             i {
                 font-size: 25px;
+            }
+            @media (max-width: 576px) {
+                width: 57px;
+                height: 57px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 12px;
             }
         }
         .service-content {
@@ -224,11 +248,28 @@
                 @media (max-width: 1400px) {
                     font-size: 18px;
                 }
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                }
+                @media (max-width: 576px) {
+                    font-size: 14px;
+                }
             }
             p {
                 font-size: 16px;
                 color: rgba(var(--white), 1);
-                margin-bottom: 0;
+                margin-bottom: -4px;
+                @media (max-width: 767px) {
+                    font-size: 15px;
+                }
+                @media (max-width: 576px) {
+                    font-size: 13px;
+                }
+            }
+        }
+        &:hover {
+            .service-icon {
+                transform: scale(1.05);
             }
         }
     }
