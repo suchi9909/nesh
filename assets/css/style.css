@@ -1047,6 +1047,40 @@ li {
   margin: 12px auto;
 }
 
+.title-style-6 {
+  margin-bottom: calc(16px + 32 * (100vw - 320px) / 1600);
+}
+.title-style-6 h5 {
+  color: rgba(var(--theme-color2), 1);
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: calc(14px + 6 * (100vw - 320px) / 1600);
+}
+.title-style-6 h2 {
+  color: rgba(var(--title-color));
+  position: relative;
+  margin-bottom: 0;
+  width: 94%;
+  font-size: calc(18px + 42 * (100vw - 320px) / 1600);
+}
+.title-style-6 p {
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+  margin: 20px 0 0 0;
+  width: 70%;
+}
+@media (max-width: 991px) {
+  .title-style-6 p {
+    width: 95%;
+  }
+}
+.title-style-6.text-center h2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+.title-style-6.text-center p {
+  margin: 20px auto 0;
+}
+
 /*=====================
     Tabs Scss start
 ==========================*/
@@ -7579,6 +7613,42 @@ body.sticky-header header .bar-option {
   }
 }
 
+.counter-box-charity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 25px;
+  border-left: 3px solid rgba(var(--theme-color2), 1);
+}
+.counter-box-charity li {
+  padding: 20px 16px;
+  background-color: rgba(var(--theme-color1), 0.05);
+  text-align: center;
+}
+.counter-box-charity li h2 {
+  font-size: calc(20px + 16 * (100vw - 320px) / 1600);
+  color: rgba(var(--theme-color1), 1);
+}
+.counter-box-charity li + li {
+  margin-left: 25px;
+}
+
+.charity-about-sec .about-img {
+  position: relative;
+}
+.charity-about-sec .about-img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/charity/bg-effect.png");
+}
+
 /*=====================
     Banner Scss start
 ==========================*/
@@ -9628,5 +9698,78 @@ body.sticky-header header .bar-option {
 
 .tooltip-inner {
   font-size: 16px;
+}
+
+/*=====================
+    Charity Scss start
+==========================*/
+.charity-mission-section {
+  margin-bottom: 130px;
+}
+.charity-mission-section .charity-mission-content {
+  position: relative;
+}
+.charity-mission-section .charity-mission-content .title-style-6 p {
+  width: 60%;
+}
+.charity-mission-section .charity-mission-content .mission-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 -50px;
+}
+.charity-mission-section .charity-mission-content .mission-detail li {
+  padding: 0 50px;
+  position: relative;
+}
+.charity-mission-section .charity-mission-content .mission-detail li h3 {
+  color: rgba(var(--content-color), 1);
+}
+.charity-mission-section .charity-mission-content .mission-detail li h2 {
+  color: rgba(var(--theme-color1), 1);
+  margin-bottom: 0;
+}
+.charity-mission-section .charity-mission-content .mission-detail li + li {
+  border-left: 1px dashed rgba(var(--black), 0.4);
+}
+.charity-mission-section .charity-mission-content .vertical-text {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 140%;
+}
+.charity-mission-section .charity-mission-content .vertical-text h1:first-child {
+  padding: 10px;
+  background-color: rgba(var(--theme-color1), 1);
+  color: white;
+}
+.charity-mission-section .charity-mission-content .charity-img {
+  position: absolute;
+  top: 24%;
+  right: 0;
+  z-index: -1;
+  width: 80%;
+}
+
+.howhelp-section .howhelp-img {
+  position: relative;
+}
+.howhelp-section .howhelp-img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/charity/bg-effect.png");
 }
 /*# sourceMappingURL=style.css.map */
