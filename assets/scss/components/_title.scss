@@ -317,4 +317,18 @@
             margin: 20px auto 0;
         }
     }
+    &.text-end {
+        h2,
+        p {
+            margin-left: auto;
+            width: 100%;
+        }
+    }
+    &.text-start {
+        h2,
+        p {
+            margin-right: auto;
+            width: 100%;
+        }
+    }
 }

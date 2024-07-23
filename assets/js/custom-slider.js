@@ -92,7 +92,7 @@ var podcast3 = new Swiper(".podcast-3", {
     },
 });
 
-var swiper3 = new Swiper(".slider-2", {
+var slidertwo = new Swiper(".slider-2", {
     slidesPerView: 2,
     autoHeight: true,
     spaceBetween: 30,

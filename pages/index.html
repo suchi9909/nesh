@@ -1586,7 +1586,7 @@
     <!-- Theme js-->
     <script src="../assets/js/script.js"></script>
 
-    <!-- <script>
+    <script>
         window.addEventListener("scroll", () => {
             if (window.scrollY > 1800) {
                 var bars = document.querySelectorAll('.progress-bar > span');
@@ -1606,20 +1606,20 @@
 
                         for (var i = 0; i < getLeft; i++) {
                             bar.style.left = (i - 5) + '%';
-                        }
+                        } 0
                     });
                 }, 500);
 
-                var innercount = document.querySelectorAll('.count-box span');
-                let intervalInnercount = setInterval(function () {
-                    innercount.forEach(function (bar) {
-                        var getNumber = innercount[0].innerHTML;
+                // var innercount = document.querySelectorAll('.count-box span');
+                // let intervalInnercount = setInterval(function () {
+                //     innercount.forEach(function (bar) {
+                //         var getNumber = innercount[0].innerHTML;
 
-                        for (var i = 0; i < getNumber; i++) {
-                            bar.innerHTML = i + '%';
-                        }
-                    });
-                }, 500);
+                //         for (var i = 0; i < getNumber; i++) {
+                //             bar.innerHTML = i + '%';
+                //         }
+                //     });
+                // }, 500);
 
 
             } else {
@@ -1628,7 +1628,7 @@
                 // clearInterval(intervalInnercount);
             }
         });
-    </script> -->
+    </script>
 
     <script>
         AOS.init({

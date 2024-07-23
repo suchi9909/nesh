@@ -20,6 +20,10 @@
     &.btn-sm {
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
     }
+    &.btn-xs {
+        padding: 8px 15px;
+        font-size: 15px;
+    }
 }
 
 .btn-light {
