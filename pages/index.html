@@ -1583,52 +1583,11 @@
     <!-- aos animation -->
     <script src="../assets/js/aos.js"></script>
 
+    <!-- progress bar animation -->
+    <script src="../assets/js/progress-animation"></script>
+
     <!-- Theme js-->
     <script src="../assets/js/script.js"></script>
-
-    <script>
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 1800) {
-                var bars = document.querySelectorAll('.progress-bar > span');
-                let intervalBars = setInterval(function () {
-                    bars.forEach(function (bar) {
-                        var getWidth = parseFloat(bar.dataset.progress);
-                        for (var i = 0; i < getWidth; i++) {
-                            bar.style.width = i + '%';
-                        }
-                    });
-                }, 500);
-
-                var count = document.querySelectorAll('.count-box');
-                let intervalCount = setInterval(function () {
-                    count.forEach(function (bar) {
-                        var getLeft = parseFloat(bar.dataset.progress);
-
-                        for (var i = 0; i < getLeft; i++) {
-                            bar.style.left = (i - 5) + '%';
-                        } 0
-                    });
-                }, 500);
-
-                // var innercount = document.querySelectorAll('.count-box span');
-                // let intervalInnercount = setInterval(function () {
-                //     innercount.forEach(function (bar) {
-                //         var getNumber = innercount[0].innerHTML;
-
-                //         for (var i = 0; i < getNumber; i++) {
-                //             bar.innerHTML = i + '%';
-                //         }
-                //     });
-                // }, 500);
-
-
-            } else {
-                // clearInterval(intervalBars);
-                // clearInterval(intervalCount);
-                // clearInterval(intervalInnercount);
-            }
-        });
-    </script>
 
     <script>
         AOS.init({

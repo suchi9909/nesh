@@ -44,6 +44,14 @@
     --theme-color2: 255, 85, 99;
 }
 
+.business-layout {
+    --title-color: 5, 14, 18;
+    --content-color: 82, 82, 108;
+    --theme-color1: 255, 73, 39;
+    --theme-color2: 36, 119, 255;
+    --theme-color3: 249, 147, 19;
+}
+
 // utils scss files
 @import "utils/variables";
 
@@ -94,5 +102,6 @@
 @import "pages/podcast";
 @import "pages/masonry";
 @import "pages/charity";
+@import "pages/business-agency";
 
 // themes scss files

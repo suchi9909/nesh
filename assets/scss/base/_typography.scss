@@ -14,15 +14,19 @@ html {
 body {
   position: relative;
   font-family: $dm-sans;
+
   &.public-sans {
     font-family: $public-sans;
   }
+
   &.prata-font {
     font-family: $prata;
   }
+
   &.raleway-font {
     font-family: $raleway;
   }
+
   &.playfair-font {
     font-family: $playfair-display;
   }
@@ -67,6 +71,7 @@ a {
 ul {
   padding-left: 0;
   margin-bottom: 0;
+
   [dir="rtl"] & {
     padding-inline-start: 0;
     margin-inline-start: 0;

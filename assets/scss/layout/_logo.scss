@@ -6,6 +6,7 @@
         filter: drop-shadow(0px 24px 30px rgba(var(--theme-color2), 0.07));
         position: relative;
         z-index: 1;
+
         &::after {
             content: "";
             position: absolute;
@@ -17,23 +18,28 @@
             background-repeat: no-repeat;
             z-index: -1;
             background-size: contain;
+
             @media (max-width: 1199px) {
                 top: 1px;
             }
+
             @media (max-width: 991px) {
                 display: none;
             }
         }
+
         .clipath-wrap {
             padding: calc(35px + (65 - 35) * ((100vw - 320px) / (1920 - 320))) 20px;
             clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
             background-color: rgba(var(--white));
+
             .logo-img {
                 text-align: center;
                 filter: brightness(0);
                 transform: scale(0.9);
                 opacity: 0.2;
                 transition: all 0.5s ease;
+
                 &:hover {
                     filter: brightness(1);
                     opacity: 1;
@@ -43,8 +49,23 @@
             }
         }
     }
+
     .swiper-wrapper {
         transition-timing-function: linear;
+    }
+
+    &.logo-business {
+        .title-style-6 {
+            h2 {
+                width: 60%;
+            }
+        }
+
+        .logo-slider {
+            &::after {
+                display: none;
+            }
+        }
     }
 }
 
@@ -54,21 +75,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)))
-            calc(30px + (60 - 30) * ((100vw - 320px) / (1920 - 320)));
+        padding: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320))) calc(30px + (60 - 30) * ((100vw - 320px) / (1920 - 320)));
         background-color: rgba(var(--white), 1);
         border: 1px solid rgba(var(--title-color), 0.1);
         height: calc(52px + (82 - 52) * ((100vw - 320px) / (1920 - 320)));
         border-radius: 5px;
         filter: grayscale(1);
         transition: all 0.5s ease;
+
         img {
             opacity: 0.5;
             transition: all 0.5s ease;
         }
+
         &:hover {
             filter: grayscale(0);
             border: 1px solid rgba(var(--title-color), 0.5);
+
             img {
                 opacity: 1;
             }
@@ -79,6 +102,7 @@
 // logo ecommerce
 .logo-ecommerce {
     padding: calc(30px + (50 - 30) * ((100vw - 320px) / (1920 - 320))) 0;
+
     .logo-img {
         background-color: rgba(var(--white), 0.5);
         height: calc(56px + (96 - 56) * ((100vw - 320px) / (1920 - 320)));
@@ -86,10 +110,12 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+
         img {
             width: 80%;
             transition: all 0.5s ease;
         }
+
         &:hover {
             img {
                 filter: grayscale(1);
@@ -97,16 +123,17 @@
             }
         }
     }
+
     &.logo-podcast {
         clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+
         .logo-img {
-            background: radial-gradient(
-                85.71% 85.71% at 50% 50%,
-                rgba(var(--white), 0) 0%,
-                rgba(var(--white), 0.4) 100%
-            );
+            background: radial-gradient(85.71% 85.71% at 50% 50%,
+                    rgba(var(--white), 0) 0%,
+                    rgba(var(--white), 0.4) 100%);
             backdrop-filter: blur(2px);
             border-radius: 10px;
+
             img {
                 width: 90%;
             }
