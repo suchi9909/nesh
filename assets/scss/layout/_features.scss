@@ -254,14 +254,44 @@
     .title-style-6 {
         width: 74%;
         margin-inline: auto;
+
+        @media (max-width: 576px) {
+            width: 100%;
+        }
     }
 
     .custom-gap {
         --bs-gutter-x: 100px;
         --bs-gutter-y: 100px;
 
+        @media (max-width: 1430px) {
+            --bs-gutter-x: 80px;
+            --bs-gutter-y: 80px;
+        }
+
+        @media (max-width: 1199px) {
+            --bs-gutter-x: 60px;
+            --bs-gutter-y: 60px;
+        }
+
+        @media (max-width: 991px) {
+            --bs-gutter-y: 40px;
+        }
+
+        @media (max-width: 576px) {
+            --bs-gutter-x: 15px;
+        }
+
         >div {
             position: relative;
+
+            @media (max-width: 991px) {
+                &:nth-child(3) {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
 
             +div {
                 &::after {
@@ -287,6 +317,12 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 15px;
+
+            @media (max-width: 991px) {
+                width: 44px;
+                height: 44px;
+                padding: 10px;
+            }
         }
 
         h3 {
@@ -298,6 +334,15 @@
             padding-right: 20px;
             margin-bottom: 13px;
 
+            @media (max-width: 1430px) {
+                font-size: 20px;
+            }
+
+            @media (max-width: 1199px) {
+                font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+                padding-right: 0;
+            }
+
             &::after {
                 content: "";
                 height: 12px;
@@ -306,12 +351,17 @@
                 position: absolute;
                 left: -10px;
                 bottom: -1px;
+
+                @media (max-width: 576px) {
+                    left: 0;
+                }
             }
         }
 
         p {
             color: rgba(var(--white), 0.7);
-            margin-bottom: 0;
+            margin-bottom: -6px;
+            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
         }
     }
 }

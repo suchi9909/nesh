@@ -198,12 +198,76 @@
     }
 }
 
+.tab-style-5 {
+    width: max-content;
+    margin: 0 auto;
+    background-color: rgba(var(--white), 0.16);
+    border-radius: 50px;
+    overflow: hidden;
+    border: none;
+    position: relative;
+    z-index: 1;
+
+    &.right {
+        &::after {
+            left: calc(50% + 5px);
+            transition: all 0.5s ease;
+        }
+    }
+
+    &::after {
+        content: "";
+        background-color: rgba(var(--white), 1);
+        width: calc(50% - 10px);
+        height: 80%;
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        z-index: -1;
+        border-radius: 40px;
+        transform: translateY(-50%);
+        box-shadow: 0px 3.27px 3.27px rgba(var(--black), 0.25);
+        transition: all 0.5s ease;
+    }
+
+    .nav-link {
+        border: none;
+        box-shadow: none;
+        color: rgba(var(--white), 1);
+        background-color: transparent;
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 500;
+        padding-block: calc(10px + (16 - 10) * ((100vw - 320px) / (1920 - 320)));
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &.active {
+            background-color: transparent;
+            color: rgba(var(--theme-color2), 1);
+        }
+    }
+}
+
 .tab-vertical {
     border-bottom: none;
+
+    @media (max-width: 991px) {
+        flex-direction: unset !important;
+        flex-wrap: unset;
+        gap: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
 
     .nav-item {
         +.nav-item {
             margin-top: 20px;
+
+            @media (max-width: 991px) {
+                margin-top: 0;
+            }
         }
 
         button {
@@ -216,6 +280,16 @@
             font-size: 20px;
             font-weight: 500;
             color: rgba(var(--content-color), 1);
+            background-color: rgba(var(--white), 1);
+
+            @media (max-width: 1199px) {
+                font-size: calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320)));
+                padding: calc(8px + (11 - 8) * ((100vw - 320px) / (1920 - 320))) calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+            }
+
+            @media (max-width: 991px) {
+                white-space: nowrap;
+            }
 
             &.active {
                 color: rgba(var(--theme-color2), 1);

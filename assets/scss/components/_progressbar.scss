@@ -47,6 +47,13 @@
         transition: left 2s ease-out;
         z-index: 1;
 
+        @media (max-width: 1199px) {
+            height: 27px;
+            width: 47px;
+            top: 0px;
+            font-size: 13px;
+        }
+
         &:after {
             content: "";
             width: 0;
@@ -59,6 +66,13 @@
             left: 50%;
             transform: translateX(-50%);
             z-index: -1;
+
+            @media (max-width: 1199px) {
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-top: 20px solid rgba(var(--black), 0.95);
+                bottom: -10px;
+            }
         }
     }
 }

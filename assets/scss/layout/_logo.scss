@@ -58,6 +58,14 @@
         .title-style-6 {
             h2 {
                 width: 60%;
+
+                @media (max-width: 767px) {
+                    width: 75%;
+                }
+
+                @media (max-width: 576px) {
+                    width: 100%;
+                }
             }
         }
 

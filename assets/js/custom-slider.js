@@ -67,6 +67,22 @@ var blog3 = new Swiper(".blog-3", {
     },
 });
 
+var blog3 = new Swiper(".blog-three", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        991: {
+            slidesPerView: 2,
+        },
+        1400: {
+            slidesPerView: 3,
+        },
+    },
+});
+
 var podcast3 = new Swiper(".podcast-3", {
     slidesPerView: 3.5,
     spaceBetween: 30,

@@ -562,6 +562,10 @@
         position: absolute;
         right: 0;
         bottom: -37%;
+
+        @media (max-width: 1400px) {
+            width: 9%;
+        }
     }
 
     .about-content {
@@ -574,6 +578,15 @@
     .about-feature {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 460px) {
+            grid-template-columns: 1fr;
+        }
 
         .feature-box {
             display: flex;
@@ -588,6 +601,14 @@
                 align-items: center;
                 justify-content: center;
                 background-color: rgba(var(--theme-color2), 0.08);
+
+                @media (max-width: 768px) {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 10px;
+                    padding: 10px;
+                }
+
             }
 
             h5 {
