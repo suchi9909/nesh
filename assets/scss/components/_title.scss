@@ -114,6 +114,14 @@
                 left: 50%;
             }
         }
+
+        p {
+            margin-inline: auto;
+        }
+
+        .btn {
+            margin-inline: auto;
+        }
     }
 
     .sub-title {
@@ -198,6 +206,21 @@
                 span {
                     background-color: rgba(var(--white), 1);
                 }
+            }
+        }
+    }
+
+    &.title-saas {
+        h2 {
+            font-family: $dm-sans;
+            line-height: 1.4;
+
+            &::after {
+                width: 60px;
+                height: 5px;
+                background-image: none;
+                background-color: rgba(var(--theme-color2), 1);
+                border-radius: 7px;
             }
         }
     }

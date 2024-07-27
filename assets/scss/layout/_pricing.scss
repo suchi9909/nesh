@@ -499,6 +499,88 @@
     position: relative;
     z-index: 1;
 
+    &.sass-pricing-sec {
+        .pricing-box {
+            .subs-detail {
+                h2 {
+                    font-size: 30px;
+                    color: rgba(var(--title-color), 1);
+                }
+
+                h6 {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+
+            .btn {
+                background-color: rgba(var(--theme-color1), 0.06);
+                color: rgba(var(--theme-color1), 1);
+                gap: 5px;
+                border-radius: 6px;
+
+                &:hover {
+                    background-color: rgba(var(--theme-color1), 1);
+                    color: rgba(var(--white), 1);
+                }
+            }
+
+            .price-title {
+                h2 {
+                    font-size: 40px;
+                    font-weight: 700;
+                    margin-bottom: 0;
+
+                    span {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .pricing-bottom {
+                padding-top: 0;
+            }
+
+            &:hover {
+                .btn {
+                    background-color: rgba(var(--theme-color1), 1);
+                    color: rgba(var(--white), 1);
+                }
+            }
+
+        }
+
+        .row {
+            >div {
+                &:nth-child(2) {
+                    .pricing-box {
+                        box-shadow: 0px 23.66px 29.58px rgba(var(--theme-color1), 0.20);
+                        margin-top: 0;
+                        background-image: url(../images/saas/price-bg.png);
+                        background-size: cover;
+                        border-radius: 10px;
+
+                        .pricing-bottom {
+                            box-shadow: none;
+                            padding-bottom: 30px;
+                        }
+
+                        .price-title {
+                            border-radius: 0;
+                            box-shadow: none;
+                            background-color: transparent;
+                        }
+
+                        .btn {
+                            background-color: rgba(var(--white), 1);
+                            color: rgba(var(--theme-color1), 1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .tab-content {
         @media (max-width: 1199px) {
             margin-top: -40px;

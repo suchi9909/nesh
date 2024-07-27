@@ -53,11 +53,11 @@
 }
 
 .saas-layout {
-    --title-color: 5, 14, 18;
+    --title-color: 0, 2, 72;
     --content-color: 82, 82, 108;
-    --theme-color1: 255, 73, 39;
-    --theme-color2: 36, 119, 255;
-    --theme-color3: 249, 147, 19;
+    --theme-color1: 113, 101, 252;
+    --theme-color2: 255, 182, 66;
+    --theme-color3: 102, 195, 113;
 }
 
 // utils scss files
@@ -111,5 +111,6 @@
 @import "pages/masonry";
 @import "pages/charity";
 @import "pages/business-agency";
+@import "pages/saas";
 
 // themes scss files

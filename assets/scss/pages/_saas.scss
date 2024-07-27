@@ -1,0 +1,141 @@
+/*=====================
+    Saas Scss start
+==========================*/
+
+.saas-tab-section {
+    background-color: #F1FAFE;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 12%;
+        height: 67%;
+        border: 20px solid rgba(var(--white), 1);
+        border-radius: 140px;
+        right: -4%;
+        top: -31%;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 17%;
+        height: 34%;
+        border: 20px solid rgba(var(--white), 1);
+        border-radius: 140px;
+        left: -6%;
+        bottom: -17%;
+    }
+
+    .tab-pane {
+        &.show {
+            .zoom-animation {
+                animation: zoomInSlow 300ms ease-in-out;
+            }
+        }
+    }
+
+    &.tab-section-2 {
+        background: rgb(241, 250, 254);
+        background: linear-gradient(180deg, rgba(241, 250, 254, 1) 0%, rgba(241, 250, 254, 0) 100%);
+
+        &:after,
+        &:before {
+            display: none;
+        }
+
+        .tab-vertical2 {
+            .nav-link {
+                padding: 36px 22px;
+            }
+        }
+    }
+
+    .tab-section {
+        background-color: rgba(var(--white), 1);
+        border-radius: 10px;
+        padding: 30px 30px;
+        box-shadow: -9px 21px 20px 0 rgba(#2D669A, 0.06);
+
+        .tab-vector {
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -30px;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        h3 {
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 1.4;
+            color: rgba(var(--title-color), 1);
+            margin-bottom: 25px;
+        }
+
+
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                font-size: 18px;
+
+                +li {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .btn {
+            margin-top: 45px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
+
+.get-started-section {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 83%;
+        height: 96px;
+        background: rgb(113, 101, 252);
+        background: linear-gradient(145deg, rgba(113, 101, 252, 1) 0%, rgba(101, 87, 255, 1) 100%);
+        opacity: .40;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+        filter: blur(40px);
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    >div {
+        padding-block: 60px;
+        position: relative;
+        z-index: 0;
+        border-radius: 30px;
+    }
+
+    .title-style-2 {
+        &.title-saas {
+            h2 {
+                margin-top: -14px;
+            }
+        }
+    }
+}

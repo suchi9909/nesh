@@ -365,3 +365,93 @@
         }
     }
 }
+
+.saas-feature-section {
+    .feature-box {
+        box-shadow: 0 14px 40px 0 rgba(#181B4B, 0.06);
+        background-color: rgba(var(--white), 1);
+        padding: 30px 20px;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 35px;
+            width: calc(100% - 20px);
+            background-color: rgba(var(--white), 0.04);
+            border-radius: 20px;
+            transform: rotate(-35deg) translateY(-50%);
+            top: 50%;
+            z-index: -1;
+            transition: all 0.5s ease;
+        }
+
+        .feature-icon {
+            width: 58px;
+            height: 58px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: rgba(var(--theme-color1), 0.10);
+            transition: all 0.5s ease;
+
+            &.color1 {
+                background-color: #FFF8EC;
+            }
+
+            &.color2 {
+                background-color: #E8F6EA;
+            }
+
+            &.color3 {
+                background-color: #FFF2F3;
+            }
+
+            &.color4 {
+                background-color: #E5F7FD;
+            }
+        }
+
+        h4 {
+            color: rgba(var(--title-color), 1);
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        p {
+            color: rgba(var(--content-color), 1);
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        &:hover {
+            background: rgb(132, 121, 255);
+            background: linear-gradient(90deg, rgba(132, 121, 255, 1) 0%, rgba(94, 80, 255, 1) 100%);
+            box-shadow: none;
+            transition: all 0.5s ease;
+
+            &:after {
+                visibility: visible;
+                opacity: 1;
+                transition: all 0.5s ease;
+            }
+
+            h4,
+            p {
+                color: rgba(var(--white), 1);
+            }
+
+            .feature-icon {
+                background-color: rgba(var(--white), 1);
+                transition: all 0.5s ease;
+            }
+        }
+    }
+}

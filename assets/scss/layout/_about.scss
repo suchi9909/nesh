@@ -547,7 +547,6 @@
     }
 }
 
-
 .business-abt-section {
     position: relative;
 
@@ -614,6 +613,50 @@
             h5 {
                 font-weight: 500;
                 color: rgba(var(--title-color), 1);
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// saas about
+.saas-about-section {
+    .about-img {
+        position: absolute;
+        bottom: -40px;
+        right: -20px;
+    }
+
+    .about-content {
+        li {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+
+            >div {
+                width: calc(100% - 52px - 20px);
+            }
+
+            +li {
+                margin-top: 32px;
+            }
+
+            .img-icon {
+                width: 52px;
+                height: 52px;
+                background-color: rgba(var(--theme-color1), 0.10);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+            }
+
+            h3 {
+                font-weight: 700;
+            }
+
+            p {
+                font-weight: 500;
                 margin-bottom: 0;
             }
         }

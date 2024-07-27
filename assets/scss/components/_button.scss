@@ -3,8 +3,7 @@
 ==========================*/
 
 .btn {
-    padding: calc(9px + (11 - 9) * ((100vw - 320px) / (1920 - 320)))
-        calc(16px + (26 - 16) * ((100vw - 320px) / (1920 - 320)));
+    padding: calc(9px + (11 - 9) * ((100vw - 320px) / (1920 - 320))) calc(16px + (26 - 16) * ((100vw - 320px) / (1920 - 320)));
     font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
     line-height: 23px;
     border-radius: 5px;
@@ -13,13 +12,15 @@
     align-items: center;
     justify-content: center;
     width: max-content;
+
     &.btn-lg {
-        padding: calc(11px + (16 - 11) * ((100vw - 320px) / (1920 - 320)))
-            calc(16px + (30 - 16) * ((100vw - 320px) / (1920 - 320)));
+        padding: calc(11px + (16 - 11) * ((100vw - 320px) / (1920 - 320))) calc(16px + (30 - 16) * ((100vw - 320px) / (1920 - 320)));
     }
+
     &.btn-sm {
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
     }
+
     &.btn-xs {
         padding: 8px 15px;
         font-size: 15px;
@@ -30,6 +31,7 @@
     background-color: rgba(var(--white), 1) !important;
     color: rgba(var(--title-color), 1) !important;
     transition: all 0.5s ease;
+
     &:hover {
         transition: all 0.5s ease;
         transform: translateY(-5px);
@@ -39,15 +41,14 @@
 
 .btn-color1 {
     box-shadow: 0px 8px 20px 0px rgba(var(--theme-color1), 0.1);
-    background: linear-gradient(
-        to right,
-        rgba(var(--theme-color1), 0.65) 0%,
-        rgba(var(--theme-color1), 1) 51%,
-        rgba(var(--theme-color1), 0.65) 100%
-    );
+    background: linear-gradient(to right,
+            rgba(var(--theme-color1), 0.80) 0%,
+            rgba(var(--theme-color1), 1) 51%,
+            rgba(var(--theme-color1), 0.80) 100%);
     color: rgba(var(--white), 1);
     background-size: 300% 100%;
     transition: all 0.4s ease-in-out;
+
     &:hover {
         background-position: 100% 0;
         transition: all 0.4s ease-in-out;
@@ -59,14 +60,13 @@
 
 .btn-color2 {
     box-shadow: 0px 8px 20px 0px rgba(var(--theme-color2), 0.1);
-    background: radial-gradient(
-        59.91% 858.55% at 27.36% 100%,
-        rgba(var(--theme-color2), 1) 0%,
-        rgba(var(--theme-color2), 0.65) 100%
-    );
+    background: radial-gradient(59.91% 858.55% at 27.36% 100%,
+            rgba(var(--theme-color2), 1) 0%,
+            rgba(var(--theme-color2), 0.65) 100%);
     color: rgba(var(--white), 1);
     background-size: 300% 100%;
     transition: all 0.4s ease-in-out;
+
     &:hover {
         background-position: 100% 0;
         transition: all 0.4s ease-in-out;
@@ -77,11 +77,10 @@
 }
 
 .btn-dark {
-    background: radial-gradient(
-        59.91% 858.55% at 27.36% 100%,
-        rgba(var(--black), 1) 0%,
-        rgba(var(--black), 0.65) 100%
-    ) !important;
+    background: radial-gradient(59.91% 858.55% at 27.36% 100%,
+            rgba(var(--black), 1) 0%,
+            rgba(var(--black), 0.65) 100%) !important;
+
     i {
         color: rgba(var(--white), 1) !important;
     }
@@ -94,6 +93,7 @@
     display: flex;
     align-items: center;
     transition: all 0.5s ease;
+
     span {
         margin-right: 14px;
         width: calc(44px + (55 - 44) * ((100vw - 320px) / (1920 - 320)));
@@ -105,14 +105,17 @@
         justify-content: center;
         transition: all 0.5s ease;
         background-color: rgba(var(--white), 1);
+
         i {
             color: rgba(var(--theme-color1), 1);
             font-size: 28px;
         }
     }
+
     &:hover {
         color: rgba(var(--theme-color2), 1);
         transition: all 0.5s ease;
+
         span {
             box-shadow: 0px 7px 20px rgba(var(--black), 0.14);
             transition: all 0.5s ease;

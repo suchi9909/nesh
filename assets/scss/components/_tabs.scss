@@ -314,6 +314,56 @@
     }
 }
 
+.tab-vertical2 {
+    .nav-link {
+        text-align: left;
+        background-color: rgba(var(--white), 1);
+        font-size: 18px;
+        font-weight: 500;
+        padding: 16px 22px;
+        border-radius: 6px;
+        overflow: hidden;
+        color: rgba(var(--title-color), 1);
+        box-shadow: 0 22px 20px 0 rgba(2, 161, 197, 0.05);
+        position: relative;
+
+        &.active {
+            background-color: rgba(var(--white), 1);
+            color: rgba(var(--theme-color1), 1);
+
+            &:after {
+                content: "";
+                width: 4px;
+                height: 27px;
+                background-color: rgba(var(--theme-color1), 1);
+                border-radius: 5px;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &:before {
+                content: "";
+                width: 0;
+                height: 0;
+                border-top: 8px solid transparent;
+                border-left: 12px solid rgba(var(--theme-color1), 1);
+                border-bottom: 8px solid transparent;
+                position: absolute;
+                right: 25px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+
+        +.nav-link {
+            margin-top: 20px;
+        }
+    }
+}
+
 .tab-pane {
     &.show {
         .product-box {
