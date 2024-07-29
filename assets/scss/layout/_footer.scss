@@ -400,6 +400,51 @@
                 }
             }
         }
+
+        &.footer-saas {
+            overflow: hidden;
+
+            .form-style-1 {
+                .form-group {
+                    .action-btn {
+                        color: rgba(var(--theme-color2), 1);
+                    }
+                }
+            }
+
+            .title-style-1 {
+                h5 {
+                    color: rgba(var(--theme-color2), 1);
+
+                    &:after {
+                        background-color: rgba(var(--theme-color2), 0.2);
+                    }
+                }
+            }
+
+            .footer-content {
+                h4 {
+                    color: rgba(var(--theme-color1), 1);
+                }
+            }
+
+            .footer-title {
+                h3 {
+                    &::after {
+                        background-color: rgba(var(--theme-color2), 1);
+                    }
+                }
+            }
+
+            .footer-effect1 {
+                top: -8%;
+            }
+
+            .footer-effect2 {
+                top: unset;
+                bottom: 0;
+            }
+        }
     }
 }
 

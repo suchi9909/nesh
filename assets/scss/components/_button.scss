@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     width: max-content;
+    gap: 6px;
 
     &.btn-lg {
         padding: calc(11px + (16 - 11) * ((100vw - 320px) / (1920 - 320))) calc(16px + (30 - 16) * ((100vw - 320px) / (1920 - 320)));

@@ -7,8 +7,7 @@
     position: relative;
     overflow: hidden;
 
-    &::after {
-        content: "";
+    .box-after {
         position: absolute;
         width: 12%;
         height: 67%;
@@ -18,8 +17,7 @@
         top: -31%;
     }
 
-    &::before {
-        content: "";
+    .box-before {
         position: absolute;
         width: 17%;
         height: 34%;
@@ -135,6 +133,49 @@
         &.title-saas {
             h2 {
                 margin-top: -14px;
+            }
+        }
+    }
+}
+
+.saas-reach-section {
+    .reach-box {
+        background-color: #F1FAFE;
+        padding: 50px 36px 36px;
+        text-align: center;
+
+        img {
+            margin-bottom: 45px;
+            height: 195px;
+            width: auto;
+        }
+
+        h3 {
+            color: rgba(var(--content-color), 1);
+            font-weight: 500;
+            margin-bottom: 18px;
+            line-height: 1.5;
+            width: 80%;
+            margin-inline: auto;
+        }
+
+        .btn {
+            margin: 0 auto;
+            border: 1px solid rgba(var(--theme-color1), 1);
+            color: rgba(var(--theme-color1), 1);
+            background-color: rgba(var(--white), 1);
+            transition: all 0.5s ease;
+
+            i {
+                font-size: 22px;
+            }
+
+        }
+
+        &:hover {
+            .btn {
+                background-color: rgba(var(--theme-color1), 1);
+                color: rgba(var(--white), 1)
             }
         }
     }

@@ -370,7 +370,7 @@
     .feature-box {
         box-shadow: 0 14px 40px 0 rgba(#181B4B, 0.06);
         background-color: rgba(var(--white), 1);
-        padding: 30px 20px;
+        padding: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320))) calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
         border-radius: 10px;
         transition: all 0.5s ease;
         height: 100%;
@@ -391,15 +391,16 @@
         }
 
         .feature-icon {
-            width: 58px;
-            height: 58px;
+            width: calc(48px + (58 - 48) * ((100vw - 320px) / (1920 - 320)));
+            height: calc(48px + (58 - 48) * ((100vw - 320px) / (1920 - 320)));
             border-radius: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 20px;
+            margin-bottom: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
             background-color: rgba(var(--theme-color1), 0.10);
             transition: all 0.5s ease;
+            padding: 12px;
 
             &.color1 {
                 background-color: #FFF8EC;
@@ -421,7 +422,7 @@
         h4 {
             color: rgba(var(--title-color), 1);
             font-weight: 700;
-            margin-bottom: 8px;
+            margin-bottom: calc(4px + (8 - 4) * ((100vw - 320px) / (1920 - 320)));
             line-height: 1.5;
         }
 

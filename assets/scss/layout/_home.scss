@@ -1208,10 +1208,10 @@
 
 // saas
 .saas-home {
+    padding-bottom: calc(130px + (380 - 130) * ((100vw - 320px) / (1920 - 320)));
+    padding-top: calc(70px + (100 - 70) * ((100vw - 320px) / (1920 - 320))) !important;
+
     .home-container {
-        position: absolute;
-        top: 130px;
-        left: 0;
         width: 100%;
         text-align: center;
 
@@ -1220,6 +1220,8 @@
                 color: rgba(var(--white), 1);
                 font-weight: 700;
                 line-height: 1.4;
+                letter-spacing: 0.03em;
+                font-size: calc(18px + (68 - 18) * ((100vw - 320px) / (1920 - 320)));
 
                 span {
                     background: linear-gradient(90deg, rgba(255, 199, 0, 1) 0%, rgba(93, 243, 190, 1) 100%);
@@ -1230,11 +1232,11 @@
                     &:after {
                         content: "";
                         background-image: url(../svg/saas/title-effect.svg);
-                        width: 213px;
-                        height: 21px;
+                        width: calc(53px + (213 - 53) * ((100vw - 320px) / (1920 - 320)));
+                        height: calc(5px + (21 - 5) * ((100vw - 320px) / (1920 - 320)));
                         position: absolute;
                         right: 0;
-                        bottom: -20px;
+                        bottom: calc(-5px + (-20 - -5) * ((100vw - 320px) / (1920 - 320)));
                     }
                 }
             }
@@ -1245,13 +1247,19 @@
                 margin-inline: auto;
                 font-weight: 500;
                 margin-bottom: 22px;
+                font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+
+                @media (max-width: 991px) {
+                    width: 100%;
+                }
             }
 
             ul {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 30px;
+                flex-wrap: wrap;
+                gap: calc(14px + (30 - 14) * ((100vw - 320px) / (1920 - 320)));
                 margin-bottom: 28px;
 
                 li {
@@ -1260,6 +1268,11 @@
                     display: inline-flex;
                     align-items: center;
                     gap: 10px;
+
+                    img {
+                        width: calc(14px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
+                        height: auto;
+                    }
                 }
             }
 
@@ -1273,10 +1286,14 @@
                     display: flex;
                     align-items: center;
 
+                    @media (max-width: 991px) {
+                        width: 90%;
+                    }
+
                     .input-icon {
-                        font-size: 22px;
-                        width: 42px;
-                        height: 42px;
+                        font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1920 - 320)));
+                        width: calc(32px + (42 - 32) * ((100vw - 320px) / (1920 - 320)));
+                        height: calc(32px + (42 - 32) * ((100vw - 320px) / (1920 - 320)));
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -1303,6 +1320,7 @@
                         align-items: center;
                         gap: 5px;
                         transform: none;
+                        padding: calc(6px + (11 - 6) * ((100vw - 320px) / (1920 - 320))) calc(10px + (26 - 10) * ((100vw - 320px) / (1920 - 320)));
                     }
                 }
             }
@@ -1312,7 +1330,7 @@
 
 .saas-laptop-section {
     text-align: center;
-    margin-top: -18%;
+    margin-top: calc(-108px + (-348 - -108) * ((100vw - 320px) / (1920 - 320)));
 
     .saas-img1,
     .saas-img2,
@@ -1323,15 +1341,33 @@
     .saas-img1 {
         left: 13%;
         top: 34%;
+        animation: up-down 4s ease-out infinite;
+
+        @media (max-width: 1400px) {
+            left: -1%;
+            top: 42%;
+            width: 30%;
+        }
     }
 
     .saas-img2 {
         right: 5%;
         top: 49%;
+
+        @media (max-width: 1400px) {
+            width: 28%;
+            right: -1%;
+            top: 59%;
+        }
     }
 
     .saas-img3 {
         right: 6%;
         top: 2%;
+        animation: up-down 5s ease-out infinite;
+
+        @media (max-width: 1400px) {
+            width: 24%;
+        }
     }
 }

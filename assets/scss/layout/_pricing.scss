@@ -559,6 +559,25 @@
                         background-image: url(../images/saas/price-bg.png);
                         background-size: cover;
                         border-radius: 10px;
+                        box-shadow: 0 23px 30px rgba(var(--theme-color1), 0.20);
+
+                        .subs-detail {
+
+                            h2,
+                            h5 {
+                                color: rgba(var(--white), 1) !important;
+                            }
+
+                            h6 {
+                                color: rgba(var(--white), 0.9) !important;
+                            }
+                        }
+
+                        .pricing-details {
+                            li {
+                                color: rgba(var(--white), 0.9) !important;
+                            }
+                        }
 
                         .pricing-bottom {
                             box-shadow: none;
@@ -569,6 +588,14 @@
                             border-radius: 0;
                             box-shadow: none;
                             background-color: transparent;
+
+                            h2 {
+                                color: rgba(var(--white), 1) !important;
+
+                                span {
+                                    color: rgba(var(--white), 0.9) !important;
+                                }
+                            }
                         }
 
                         .btn {
