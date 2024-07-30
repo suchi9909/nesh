@@ -501,10 +501,20 @@
 
     &.sass-pricing-sec {
         .pricing-box {
+
+            @media (max-width: 1199px) {
+                box-shadow: 0px 0px 30px rgba(86, 71, 186, 0.05);
+                border-radius: 10px;
+            }
+
             .subs-detail {
                 h2 {
-                    font-size: 30px;
+                    font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1920 - 320)));
                     color: rgba(var(--title-color), 1);
+                }
+
+                h5 {
+                    margin-bottom: calc(4px + (8 - 4) * ((100vw - 320px) / (1920 - 320)));
                 }
 
                 h6 {
@@ -526,19 +536,30 @@
             }
 
             .price-title {
+
+                @media (max-width: 1199px) {
+                    box-shadow: none;
+                    border-radius: 0;
+                }
+
                 h2 {
-                    font-size: 40px;
+                    font-size: calc(25px + (40 - 25) * ((100vw - 320px) / (1920 - 320)));
                     font-weight: 700;
                     margin-bottom: 0;
 
                     span {
-                        font-size: 18px;
+                        font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
                     }
                 }
             }
 
             .pricing-bottom {
                 padding-top: 0;
+
+                @media (max-width: 1199px) {
+                    box-shadow: none;
+                    padding-bottom: 30px;
+                }
             }
 
             &:hover {
@@ -685,7 +706,7 @@
         }
 
         .pricing-details {
-            padding: 24px 0 20px 0;
+            padding: calc(12px + (24 - 12) * ((100vw - 320px) / (1920 - 320))) 0 20px 0;
 
             .round-tick {
                 width: 17px;
@@ -709,8 +730,12 @@
                 align-items: center;
                 gap: 10px;
 
+                img {
+                    width: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
+                }
+
                 +li {
-                    margin-top: 15px;
+                    margin-top: calc(9px + (15 - 9) * ((100vw - 320px) / (1920 - 320)));
                 }
             }
         }

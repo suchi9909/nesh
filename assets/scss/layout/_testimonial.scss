@@ -304,24 +304,46 @@
     background: rgb(241, 250, 254);
     background: linear-gradient(180deg, rgba(241, 250, 254, 1) 0%, rgba(241, 250, 254, 0) 100%);
 
+    @media (max-width: 576px) {
+        background: rgb(241, 250, 254);
+    }
+
     ul {
         column-count: 2;
         gap: 30px;
         margin-top: -30px;
+
+        @media (max-width: 767px) {
+            gap: 15px;
+        }
+
+        @media (max-width: 576px) {
+            column-count: 1;
+        }
     }
 
     .testimoial-title {
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+
+        .btn {
+            @media (max-width: 991px) {
+                margin: 0 auto;
+            }
+        }
+
         h2 {
             color: rgba(var(--title-color), 1);
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
         }
 
         p {
-            font-size: 18px;
+            font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
             font-weight: 500;
             color: rgba(var(--content-color), 1);
-            margin-bottom: 50px;
+            margin-bottom: calc(15px + (50 - 15) * ((100vw - 320px) / (1920 - 320)));
         }
     }
 
@@ -332,9 +354,9 @@
         transition: all 0.5s ease;
 
         p {
-            font-size: 18px;
+            font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
             font-weight: 500;
-            margin-bottom: 75px;
+            margin-bottom: calc(20px + (75 - 20) * ((100vw - 320px) / (1920 - 320)));
         }
 
         .testi-avatar-box {
@@ -343,8 +365,8 @@
             gap: 15px;
 
             img {
-                width: 60px;
-                height: 60px;
+                width: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320)));
+                height: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320)));
                 border-radius: 100%;
                 object-fit: cover;
             }
@@ -354,6 +376,7 @@
                     color: rgba(var(--title-color), 1);
                     font-weight: 700;
                     margin-bottom: 4px;
+                    font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
                 }
 
                 h5 {
@@ -366,6 +389,10 @@
 
         &:hover {
             transform: scale(1.04);
+
+            @media (max-width: 767px) {
+                transform: scale(1);
+            }
         }
     }
 }

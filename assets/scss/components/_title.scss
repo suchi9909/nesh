@@ -214,6 +214,7 @@
         h2 {
             font-family: $dm-sans;
             line-height: 1.4;
+            margin-top: calc(-7px + (-13 - -7) * ((100vw - 320px) / (1920 - 320)));
 
             &::after {
                 width: 60px;
@@ -421,6 +422,76 @@
         p {
             margin-right: auto;
             width: 100%;
+        }
+    }
+}
+
+// seo 
+.title-style-7 {
+    margin-bottom: calc(15px + (35 - 15) * ((100vw - 320px) / (1920 - 320)));
+
+    h5 {
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 500;
+        color: rgba(var(--theme-color2), 1);
+        margin-bottom: 6px;
+    }
+
+    h2 {
+        position: relative;
+        display: inline-block;
+        text-transform: capitalize;
+        color: rgba(var(--title-color), 1);
+        line-height: 1.3;
+        margin-bottom: 16px;
+
+        span {
+            position: relative;
+            color: rgba(var(--theme-color1), 1);
+
+            &:after {
+                content: "";
+                position: absolute;
+                background-color: rgba(var(--theme-color1), 0.10);
+                height: calc(8px + (11 - 8) * ((100vw - 320px) / (1920 - 320)));
+                width: 100%;
+                right: 0;
+                bottom: 4px;
+                transition: all 0.5s ease;
+            }
+
+            &:hover {
+                &:after {
+                    height: calc(100% - 10px);
+                }
+            }
+        }
+    }
+
+    p {
+        font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 400;
+        margin-bottom: 25px;
+        color: rgba(var(--content-color), 1);
+    }
+
+    .title-btn {
+        color: rgba(var(--content-color), 1);
+        font-weight: 700;
+        font-size: 18px;
+        position: relative;
+        padding-left: 20px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            background-color: rgba(var(--theme-color1), 0.1);
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 }

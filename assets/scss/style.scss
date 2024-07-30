@@ -60,6 +60,14 @@
     --theme-color3: 102, 195, 113;
 }
 
+.seo-layout {
+    --title-color: 5, 14, 18;
+    --content-color: 55, 62, 65;
+    --theme-color1: 38, 103, 255;
+    --theme-color2: 252, 114, 26;
+    --theme-color3: 255, 187, 11;
+}
+
 // utils scss files
 @import "utils/variables";
 
