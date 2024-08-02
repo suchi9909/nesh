@@ -689,3 +689,40 @@
         }
     }
 }
+
+
+// seo about
+.seo-about-section {
+    background: rgb(239, 245, 255);
+    background: linear-gradient(180deg, rgba(239, 245, 255, 0.45) 0%, rgba(239, 245, 255, 1) 100%);
+
+    .icon-flex {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .feature-icon {
+            position: relative;
+            padding: 10px 16px 16px 16px;
+
+            .process-icon {
+                width: 100px;
+            }
+
+            .effect-bg {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                object-fit: contain;
+            }
+        }
+    }
+}
