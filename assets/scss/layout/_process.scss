@@ -272,6 +272,10 @@
 .seo-process-box {
     padding-left: 44px;
 
+    @media (max-width: 1199px) {
+        padding-left: 24px;
+    }
+
     .seo-top-box {
         display: flex;
         align-items: center;
@@ -301,6 +305,11 @@
             margin-bottom: 0;
             line-height: 1.4;
             font-weight: 600;
+
+            @media (max-width: 1400px) {
+                line-height: 1.2;
+                font-size: 16px;
+            }
         }
 
         >div {
@@ -311,10 +320,21 @@
             gap: 18px;
             border-radius: 70px;
 
+            @media (max-width: 1400px) {
+                gap: 10px;
+            }
+
+
             >div {
                 padding-right: 22px;
                 width: calc(100% - 110px - 18px);
+
+                @media (max-width: 1400px) {
+                    padding-right: 6px;
+                    width: calc(100% - 80px - 10px);
+                }
             }
+
         }
 
         .seo-icon {
@@ -329,6 +349,12 @@
             background: linear-gradient(41deg, rgba(235, 234, 234, 1) 0%, rgba(255, 255, 255, 1) 100%);
             padding: 4px;
             box-shadow: -30px 30px 18px 0px rgba(var(--black), 0.1);
+
+            @media (max-width: 1400px) {
+                width: 80px;
+                height: 80px;
+                padding: 2px;
+            }
 
             >div {
                 background-color: rgba(var(--white), 1);
@@ -350,6 +376,11 @@
         border-bottom: 2px solid rgba(var(--theme-color1), 1);
         overflow: hidden;
 
+
+        @media (max-width: 576px) {
+            border-radius: 25px 25px 0 25px;
+        }
+
         &:after {
             content: "";
             position: absolute;
@@ -363,7 +394,15 @@
         >div {
             padding: 38px 28px;
             background-color: rgba(var(--white), 1);
-            border-radius: 70px;
+            border-radius: 25px;
+
+            @media (max-width: 1400px) {
+                padding: 28px 22px;
+            }
+
+            @media (max-width: 576px) {
+                padding: 18px 12px;
+            }
         }
 
         p {

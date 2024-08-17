@@ -1328,8 +1328,15 @@
     }
 
     &.seo-home {
-        padding-top: 120px;
+        padding-top: calc(46px + calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320))) + 60px);
         position: relative;
+        padding-bottom: calc(calc(108px + (348 - 108) * ((100vw - 320px) / (1920 - 320))) + 60px);
+
+        @media (max-width: 576px) {
+            padding-top: calc(36px + calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320))) + 40px);
+            position: relative;
+            padding-bottom: calc(calc(108px + (348 - 108) * ((100vw - 320px) / (1920 - 320))) + 40px);
+        }
 
         .round-effect {
             width: 30px;
@@ -1385,9 +1392,14 @@
 
                 p {
                     color: rgba(var(--content-color), 1);
-                    margin-top: 24px;
+                    margin-top: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
                     width: 90%;
                     line-height: 1.8;
+                    margin-bottom: 0;
+
+                    @media (max-width: 767px) {
+                        line-height: 1.6;
+                    }
                 }
             }
         }

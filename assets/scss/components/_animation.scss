@@ -123,3 +123,23 @@
         top: -3%;
     }
 }
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes rotate-effect {
+    0% {
+        transform: rotate(4deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}

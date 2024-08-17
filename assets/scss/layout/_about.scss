@@ -695,11 +695,36 @@
 .seo-about-section {
     background: rgb(239, 245, 255);
     background: linear-gradient(180deg, rgba(239, 245, 255, 0.45) 0%, rgba(239, 245, 255, 1) 100%);
+    position: relative;
+
+    @media (max-width: 1199px) {
+        padding-bottom: calc(30px + (70 - 30) * ((100vw - 320px) / (1920 - 320)));
+    }
+
+    .seo-img {
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+
+        img {
+            @media (max-width: 991px) {
+                width: 60%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+
+    .about-effect {
+        position: absolute;
+        right: 0;
+        top: -32%;
+    }
 
     .icon-flex {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: calc(4px + (20 - 4) * ((100vw - 320px) / (1920 - 320)));
         margin-bottom: 30px;
 
         p {
