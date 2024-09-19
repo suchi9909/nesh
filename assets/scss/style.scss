@@ -71,6 +71,9 @@
 // utils scss files
 @import "utils/variables";
 
+// Vendors scss files
+@import "vendors/aos";
+
 // base scss files
 @import "base/reset";
 @import "base/typography";

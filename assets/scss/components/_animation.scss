@@ -143,3 +143,9 @@
         transform: rotate(-10deg);
     }
 }
+
+@keyframes progress-bar-stripes {
+    0% {
+        background-position-x: 1rem;
+    }
+}

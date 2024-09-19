@@ -65,7 +65,7 @@
         }
 
         h1 {
-            color: rgba(var(--title-color));
+            color: rgba(var(--title-color), 1);
             position: relative;
             margin-top: 15px;
             margin-bottom: 50px;
@@ -219,7 +219,7 @@
         }
 
         h1 {
-            color: rgba(var(--title-color));
+            color: rgba(var(--title-color), 1);
             position: relative;
             margin-top: 15px;
             margin-bottom: 20px;
@@ -425,7 +425,7 @@
         }
 
         h1 {
-            color: rgba(var(--title-color));
+            color: rgba(var(--title-color), 1);
             position: relative;
             margin-top: 15px;
             margin-bottom: 0;
@@ -644,7 +644,7 @@
         }
 
         h1 {
-            color: rgba(var(--title-color));
+            color: rgba(var(--title-color), 1);
             position: relative;
             margin-top: 15px;
             margin-bottom: 0;
@@ -760,7 +760,7 @@
         }
 
         h1 {
-            color: rgba(var(--title-color));
+            color: rgba(var(--title-color), 1);
             position: relative;
             margin-top: -14px;
             margin-bottom: 0;
@@ -1033,9 +1033,15 @@
                     color: rgba(var(--white), 0.8);
                     font-size: 16px;
                     font-weight: 500;
+                    font-family: $karla;
+                    box-shadow: none;
 
                     &::placeholder {
                         color: rgba(var(--white), 0.3);
+                    }
+
+                    &::-webkit-inner-spin-button {
+                        display: none;
                     }
                 }
             }

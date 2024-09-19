@@ -112,6 +112,10 @@ var slidertwo = new Swiper(".slider-2", {
     slidesPerView: 2,
     autoHeight: true,
     spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+    },
     breakpoints: {
         0: {
             slidesPerView: 1,

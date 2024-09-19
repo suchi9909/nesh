@@ -78,7 +78,7 @@
         >div {
             clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
             padding: 35px 20px;
-            background: rgba(var(--white));
+            background: rgba(var(--white), 1);
         }
 
         .service-icon {

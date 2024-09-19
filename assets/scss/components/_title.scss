@@ -318,7 +318,7 @@
     }
 
     h2 {
-        color: rgba(var(--title-color));
+        color: rgba(var(--title-color), 1);
         position: relative;
         margin-top: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
         margin-bottom: 0;
@@ -369,7 +369,7 @@
     }
 
     h2 {
-        color: rgba(var(--title-color));
+        color: rgba(var(--title-color), 1);
         position: relative;
         margin-bottom: 0;
         width: 94%;

@@ -88,7 +88,7 @@
 }
 
 .play-btn {
-    color: rgba(var(--title-color));
+    color: rgba(var(--title-color), 1);
     font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 500;
     display: flex;

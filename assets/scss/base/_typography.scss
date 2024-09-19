@@ -40,27 +40,33 @@ h1 {
   font-weight: bold;
   font-size: calc(22px + (68 - 22) * ((100vw - 320px) / (1920 - 320)));
   line-height: 1.5;
+  margin-bottom: 0;
 }
 
 h2 {
   font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 600;
+  margin-bottom: 0;
 }
 
 h3 {
   font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
+  margin-bottom: 0;
 }
 
 h4 {
   font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+  margin-bottom: 0;
 }
 
 h5 {
   font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
+  margin-bottom: 0;
 }
 
 h6 {
   font-size: 14px;
+  margin-bottom: 0;
 }
 
 p {

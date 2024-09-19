@@ -82,6 +82,7 @@
                 transition: all 0.5s ease;
 
                 &:hover {
+                    background-color: rgba(var(--white), 0.15);
                     transform: translateY(-4px);
                 }
             }
@@ -138,14 +139,42 @@
                 margin-top: 20px;
             }
         }
+
+        .form-group {
+            .form-control {
+                padding-right: 80px;
+                transition: all 0.3s ease-in-out;
+
+                &:focus {
+                    background-color: rgba(var(--white), 0.2);
+                }
+            }
+        }
     }
 
     .form-check {
         margin-top: 20px;
+        padding-left: 0;
+        margin-bottom: 0;
+        display: flex;
+        gap: 9px;
 
         .form-check-input {
+            border-radius: 2px;
+            border: 1px solid rgba(82, 82, 108, 1);
+            float: unset;
+            margin: 0;
+            width: 17px;
+            height: 17px;
+            margin-top: 3px;
+
             &:focus {
                 box-shadow: none;
+            }
+
+            &:checked {
+                background-color: rgba(var(--theme-color1), 1);
+                border-color: rgba(var(--theme-color1), 1);
             }
         }
 
@@ -153,6 +182,7 @@
             color: rgba(var(--white), 0.7);
             font-size: 16px;
             font-weight: 500;
+            width: calc(100% - 17px - 9px);
         }
     }
 
