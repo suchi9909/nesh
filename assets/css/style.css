@@ -215,6 +215,9 @@ body.raleway-font {
 body.playfair-font {
   font-family: "Playfair Display", serif;
 }
+body.walsheim-font {
+  font-family: "GT Walsheim Pro";
+}
 
 h1 {
   font-weight: bold;
