@@ -828,12 +828,39 @@
         gap: 40px;
     }
 
+    .newsletter-box {
+        padding: 20px 20px 30px;
+
+        h4 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .form-control {
+            margin-top: 16px;
+            padding: 11px 20px;
+            border-radius: 0;
+            border: 1px solid rgba(var(--title-color), 0.15);
+            font-size: 14px;
+            color: rgba(var(--title-color), 0.7);
+            font-weight: 500;
+            margin-bottom: 13px;
+        }
+    }
+
     .charity-featured-blog {
-        border: 1px solid rgba(27, 27, 27, 0.15);
+        border: 1px solid rgba(var(--title-color), 0.15);
 
         .blog-title {
             padding: 20px;
-            border-bottom: 1px solid rgba(27, 27, 27, 0.15);
+            border-bottom: 1px solid rgba(var(--title-color), 0.15);
 
             h3 {
                 font-size: 26px;
@@ -892,6 +919,63 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.help-section {
+    background-color: #015366;
+    position: relative;
+    overflow: hidden;
+    padding-block: 41px;
+
+    .left-gif {
+        mix-blend-mode: multiply;
+        width: 239px;
+        height: 239px;
+        position: absolute;
+        bottom: 0;
+        left: 220px;
+    }
+
+    .right-gif {
+        mix-blend-mode: multiply;
+        width: 206px;
+        height: 206px;
+        position: absolute;
+        top: -29px;
+        right: 280px;
+    }
+
+    .right-leaf {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 399px;
+        height: 310px;
+        object-fit: cover;
+    }
+
+    .left-leaf {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 374px;
+        height: 290px;
+        object-fit: cover;
+    }
+
+    .title-style-6 {
+
+        h2,
+        p {
+            color: rgba(var(--white), 1);
+        }
+
+        p {
+            letter-spacing: 1.5px;
+            width: 60%;
+            margin-bottom: 30px;
         }
     }
 }

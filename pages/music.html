@@ -15,7 +15,6 @@
     <!--Google font-->
     <link href="../assets/fonts/walsheim.css" rel="stylesheet">
 
-
     <!-- bootstrap css -->
     <link id="rtl-link" rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.min.css">
 
@@ -25,18 +24,29 @@
     <!-- animation css -->
     <link rel="stylesheet" href="../assets/css/vendors/animate.min.css" />
 
-
     <!-- swiper slider css -->
     <link rel="stylesheet" href="../assets/css/vendors/swiper-bundle.min.css" />
 
     <!-- style css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-
-
-
 </head>
 
 <body class="music-layout walsheim-font">
+
+
+    <!-- line effect start -->
+    <div class="line-effect">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 col-6"></div>
+                <div class="col-lg-3 col-md-4 col-6"></div>
+                <div class="col-lg-3 col-4 d-md-inline-block d-none"></div>
+                <div class="col-3 d-lg-inline-block d-none"></div>
+            </div>
+        </div>
+    </div>
+    <!-- line effect end -->
+
 
     <!-- header start -->
     <header>
@@ -53,59 +63,81 @@
 
 
     <!-- home section start -->
-    <section class="app-home pt-0">
-        <img src="../assets/images/app-showcase/home/bg.jpg" class="img-fluid bg-img" alt="home-bg">
+    <section class="music-home pt-0">
+        <img src="../assets/images/music/home/home-bg.png" class="img-fluid bg-img" alt="home-bg">
+        <img src="../assets/images/music/home/round-effect.svg" class="round-img-1" alt="">
+        <img src="../assets/images/music/home/round-effect2.svg" class="round-img-2" alt="">
+        <img src="../assets/images/music/home/side1.svg" class="shape-1" alt="">
+        <img src="../assets/images/music/home/side2.svg" class="shape-2" alt="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 order-lg-0 order-1">
                     <div class="home-content">
                         <div>
-                            <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><i
-                                    class="ri-settings-5-fill me-2"></i>We
-                                Provide Life Time
-                                Support </h4>
-                            <h1 class="text-animation">Showcase your App in one place</h1>
-                            <p class="text-animation">Lorem ipsum is placeholder text commonly used in the graphic,
-                                print, and publishing industries for previewing layouts and visual mockups</p>
-                            <ul class="counter-box">
-                                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                                    <h2>10M</h2>
-                                    <h5>Download App</h5>
+                            <h1>STREAM <br><span>YOUR MUSIC</span></h1>
+                            <p>Listen to playlists curated for every occasion. Get daily podcasts and music
+                                recommendations.</p>
+                            <ul class="store-list">
+                                <li>
+                                    <a href="https://www.apple.com/in/app-store/" target="_blank">
+                                        <span>App store <br> Get it for free</span>
+                                        <i class="ri-apple-fill"></i>
+                                    </a>
                                 </li>
-                                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                                    <h2>30+</h2>
-                                    <h5>New Feature</h5>
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                                    <h2>97%</h2>
-                                    <h5>Satisfied Client</h5>
+                                <li>
+                                    <a href="https://play.google.com/store/games?hl=en&pli=1" class="store-border"
+                                        target="_blank">
+                                        <span>App store <br> Get it for free</span>
+                                        <i class="ri-google-play-line"></i>
+                                    </a>
                                 </li>
                             </ul>
-                            <a href="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
-                                data-cursor="pointer" class="btn btn-color2 btn-lg"><i
-                                    class="ri-apple-fill me-2"></i>Get This App</a>
+                            <h6>
+                                <svg>
+                                    <use xlink:href="../assets/svg/music/circle.svg#circle"></use>
+                                </svg>
+                                <span>Try for free. No Credit card required</span>
+                            </h6>
+                            <div class="music-box">
+                                <audio id="audio"
+                                    src="https://raw.githubusercontent.com/ustabasiibrahim/music-player/master/assets/music/1.mp3"></audio>
+                                <div class="music-controls">
+                                    <button class="prevbtn" id="prevbtn">
+                                        <i class="ri-rewind-start-fill"></i>
+                                    </button>
+                                    <button class="playpause" id="playpause">
+                                        <i id="playpause-btn" class="ri-play-large-fill"></i>
+                                    </button>
+                                    <button class="nextbtn" id="nextbtn">
+                                        <i class="ri-forward-end-fill"></i>
+                                    </button>
+                                </div>
+
+                                <div class="music-number">
+                                    <div class="music-progress">
+                                        <p>Ministry Of Life</p>
+                                        <div class="duration">
+                                            <span class="current-time">00:00</span>
+                                            <span>/</span>
+                                            <span class="duration-time">00:00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1 order-0">
-                    <div class="home-phone">
-                        <img src="../assets/images/app-showcase/home/phone.png" class="img-fluid phone-img"
-                            alt="chacter">
-                        <div class="app-install">
-                            <h2>35k+</h2>
-                            <h4>Active install apps</h4>
-                        </div>
-                        <div class="animated-shapes">
-                            <img src="../assets/images/app-showcase/home/clinet-bg.png" class="img-fluid client-img"
-                                alt="client">
-                            <img src="../assets/svg/shapes/blob.svg" class="img-fluid blob-img" alt="client">
-                        </div>
+                    <div class="home-image">
+                        <img src="../assets/images/music/home/main.png" class="img-fluid phone-img" alt="chapter">
+                        <img src="../assets/images/music/home/earbuds.png" class="img-fluid earbuds-img" alt="client">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- home section end -->
+
 
     <!-- tap to top start -->
     <div class="back-to-top" id="backToTop">
@@ -125,6 +157,9 @@
     <script src="../assets/js/textify.min.js"></script>
     <script src="../assets/js/custom-text.js"></script>
 
+    <!-- music play js -->
+    <script src="../assets/js/music-play.js"></script>
+
     <!-- aos animation -->
     <script src="../assets/js/aos.js"></script>
 
@@ -137,8 +172,6 @@
         });
         window.addEventListener('load', AOS.refresh);
     </script>
-
-
 </body>
 
 </html>

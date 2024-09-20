@@ -68,6 +68,14 @@
     --theme-color3: 255, 187, 11;
 }
 
+.music-layout {
+    --title-color: 48, 26, 65;
+    --content-color: 93, 81, 108;
+    --theme-color1: 255, 106, 91;
+    // --theme-color2: 252, 114, 26;
+    // --theme-color3: 255, 187, 11;
+}
+
 // utils scss files
 @import "utils/variables";
 
